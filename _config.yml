@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            bluscreenofjeff's blog
+tagline:          'Infosec stuff'
+description:      'Infosec stuff'
+url:              http://bluscreenofjeff.com
+baseurl:          /
+
+author:
+  name:           'bluscreenofjeff'
+  url:            https://twitter.com/bluscreenofjeff
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/bluscreenofjeff
+
+timezone: America/Los_Angeles

@@ -1,2 +1,0 @@
-# bluscreenofjeff.github.io
-blog
