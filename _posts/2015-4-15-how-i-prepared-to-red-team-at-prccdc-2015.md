@@ -104,7 +104,7 @@ done
 <h3>Defacement</h3>
 <p>Though this was my first rodeo, I knew that there would be opportunities to deface some web interfaces and I wanted to be ready to bring some lulz. This is what I settled on:
 <img src="{{site.url}}/assets/prccdc2015-defacement.gif">
-<a href="">Source</a>
+<a href="https://github.com/bluscreenofjeff/CCDC-Scripts/tree/master/website-defacement">Source</a>
 
 <p>Looking back now, I should have also gathered some nice gifs about patching or host hardenening.
      
