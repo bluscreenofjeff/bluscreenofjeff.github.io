@@ -111,14 +111,14 @@ done
 
 <br><br>
 <h3>Prepping for Next Year</h3>
-<p>As I mentioned I had a blast this year and hope to attend again next year. Before then I'd there are a few scripts I'd like to have written and in-hand before go-time:
+<p>As I mentioned I had a blast this year and hope to attend again next year. Before then there are a few scripts I'd like to have written and in-hand before go-time:
 <ul>
 	<li><b>ndiff to monitor environment</b> - Before this year I started tweaking this script from the nmap documentation to diff periodic scans and monitor for network changes. I didn't get it polished enough and now am wondering if it's the best way to get what I'm after, but I'd like to be able to monitor the Blue Team's environment as close to realtime as possible. Spot new hosts, identify restarts, etc.</li>
 	<li><b>Low-hanging fruit scans</b> - Along the same lines, I would like a way to constantly check for previously used credentials, previously exploited vulns, etc to try and catch systems when they get reverted. </li>
 	<li><b>Script to remove users from admin groups</b> - This is something my Red cell team manually did this year. We got Domain Admin access and once the final phase of wreaking havoc was called on we ran the resource script to remove all DAs from the Domain Admin, Enterprise Admin, Schema Admin, and Remote Desktop user groups. It would have been much easier to have a script to make that resource script. Simple enough.</li>
-	<li><b>moar lulz</b> - Somewhere around the middle of Phase 2 my co-Red cell teamer and I were watching Boos chasing the Blue Teamer's mouse and causing them much frustration while trying to write a Disaster Recovery Plan. That was a lot of fun. I'd like to find some more ways to make our presence known to the Blue Teamers without being too destructive and watch them try to remediate us out. VNC, replaced sysinternals tools, things like that would be fun...</li></ul>
+	<li><b>moar lulz</b> - Somewhere around the middle of Phase 2 my co-Red cell teamer and I were watching some Boos from Super Mario Bros. chasing the Blue Teamer's mouse and causing them much frustration while trying to write a Disaster Recovery Plan. That was a lot of fun. I'd like to find some more ways to make our presence known to the Blue Teamers without being too destructive and watch them try to remediate us out. VNC, replaced sysinternals tools, things like that would be fun...</li></ul>
 
-<p>If I had to give one piece of advice to a first time Red Teamer, my suggestion is to prepare as much as possible. The LAST thing you want to be doing during the competition is Googling how to run an exploit or how to add add yourself to the local admin group. That's not to say you'll avoid it completely-- you most likely won't -- but you want to minimize searching time down to things that are unique to the environment at hand. Automate the basic stuff that takes time, copy/paste the rest.
+<p>If I had to give one piece of advice to a first time Red Teamer, my suggestion is to prepare as much as possible. The LAST thing you want to be doing during the competition is Googling how to run an exploit or how to add yourself to the local admin group. That's not to say you'll avoid it completely-- you most likely won't -- but you want to minimize searching time down to things that are unique to the environment at hand. Automate the basic stuff that takes time, copy/paste the rest.
      
      </div>
 </div>
