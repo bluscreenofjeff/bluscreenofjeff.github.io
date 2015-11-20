@@ -6,7 +6,7 @@ year: 2014
 month: 2
 day: 17
 published: true
-summary: Keep your Veil payloads fresh to avoid getting caught by signatures.
+summary: Keep your Veil payloads fresh to avoid getting caught by signatures
 image: 
 ---
      

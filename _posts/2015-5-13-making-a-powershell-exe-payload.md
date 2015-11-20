@@ -6,7 +6,7 @@ year: 2015
 month: 5
 day: 13
 published: true
-summary: A script to make a powershell payload into an executable.
+summary: A script to make a powershell payload into an executable
 ---
      
 <div class="row">  

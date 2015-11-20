@@ -6,7 +6,7 @@ year: 2015
 month: 4
 day: 15
 published: true
-summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition.
+summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition
 ---
      
 <div class="row">  
@@ -27,7 +27,7 @@ summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition.
 <li>Alias <code>msfconsole='msfconsole -r /msfconsole.rc'</code></li>
 <li>Add <code>* * * * * /payload_gen.sh</code> to crontab</li>
 </ul>
-<p>Next up was loading up on wordlists. I rounded up the usual suspects (Cain, John, RockYou, etc) but I knew I would want to add some inconspicuous user accounts and mess with the Blue Team's host file. To accomodate, I found a list of the top 10,000 US last names. I ended up just whipping up a slightly taunting list of 10 usernames that I used day of, but if I needed 10k usernames I had them.
+<p>Next up was loading up on wordlists. I rounded up the usual suspects (Cain, John, RockYou, etc) but I knew I would want to add some inconspicuous user accounts and mess with the Blue Team's host file. To accomodate, I found lists of the top 10,000 US last names and internet domain names. I ended up just whipping up a slightly taunting list of 10 usernames that I used day of, but if I needed 10k usernames I had them.
 
 <p>I wrote a quick bash script to create a Metasploit resource script and batch file that creates new local users and add them to the local admin group for persistence sake.
 {% highlight bash lineanchors %}

@@ -6,7 +6,7 @@ year: 2014
 month: 2
 day: 14
 published: true
-summary: Use resource scripts to run common Metasploit tasks quickly.
+summary: Use resource scripts to run common Metasploit tasks quickly
 image: post_one.jpg
 ---
      

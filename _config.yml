@@ -4,7 +4,6 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            bluscreenofjeff's blog
@@ -26,3 +25,7 @@ github:
   repo:           https://github.com/bluscreenofjeff
 
 timezone: America/Los_Angeles
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
