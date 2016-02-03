@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hit the Ground Running- Automating Metasploit
-category: Metasploit
+category:
 year: 2014
 month: 2
 day: 14

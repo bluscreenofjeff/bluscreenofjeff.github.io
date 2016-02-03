@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fresh Veil- Automatically Generating Payloads
-category: Payloads
+category:
 year: 2014
 month: 2
 day: 17

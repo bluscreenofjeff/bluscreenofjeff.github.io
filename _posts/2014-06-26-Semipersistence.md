@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Semi-Persistence
-category: Payloads
+category:
 author: bluscreenofjeff
 year: 2014
 month: 6
