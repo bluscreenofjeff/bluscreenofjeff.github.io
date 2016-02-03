@@ -13,7 +13,9 @@ summary: Leverage SnarfJS to maximize the value gained from your SMB Relaying, e
 <div class="row">  
      <div class="span9 columns">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis lectus ligula. Curabitur tincidunt odio risus, eu luctus ante ullamcorper vel. Sed nec dui nibh. Nunc tellus nisl, bibendum feugiat magna vitae, mattis blandit felis. Quisque congue vel magna sit amet consequat. Nulla eget sapien et tortor commodo convallis vel eget orci. Vestibulum sagittis, tortor id aliquam vehicula, nibh libero laoreet dolor, eu feugiat turpis neque eu diam.
+{% highlight ruby %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis lectus ligula. Curabitur tincidunt odio risus, eu luctus ante ullamcorper vel. Sed nec dui nibh. Nunc tellus nisl, bibendum feugiat magna vitae, mattis blandit felis. Quisque congue vel magna sit amet consequat. Nulla eget sapien et tortor commodo convallis vel eget orci. Vestibulum sagittis, tortor id aliquam vehicula, nibh libero laoreet dolor, eu feugiat turpis neque eu diam.
+{% endhighlight %}
 
 <p>Aliquam ultricies laoreet nulla vel convallis. Donec vel sollicitudin arcu, non posuere libero. Nullam suscipit nibh a ullamcorper tincidunt. Vivamus vitae finibus purus. Sed non luctus eros, vitae lacinia sapien. Donec cursus semper nisl vitae hendrerit. Aliquam vitae neque viverra, accumsan sapien in, suscipit nibh. Aenean odio magna, dictum non dapibus eget, varius quis nibh. Morbi porta ex quam, consectetur dignissim odio fringilla sed. Nunc velit nisl, venenatis vitae libero facilisis, porta accumsan ex.
 

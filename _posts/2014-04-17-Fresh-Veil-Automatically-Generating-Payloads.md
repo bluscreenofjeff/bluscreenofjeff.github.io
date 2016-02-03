@@ -20,7 +20,7 @@ image:
 
 <p>The solution? Use Veil’s command line options and cron to regenerate payloads every 30 minutes. </p>
 
-<br><p><b>Server Build</b></p>
+<p><b>Server Build</b></p>
 <p>This is the basic build. Let’s assume that you have a server that you catch social engineering payloads on. Static IP (or domain).</p>
 <p>For setup, make a directory called <code>/root/payload_temp</code> and use git to clone Veil-Evasion into that folder. Run through the setup script in Veil-Evasion/setup. </p>
 <p>The <code>/root/payload_temp</code> directory is where we’ll generate the payload before we move it to our apache root.</p><br>
