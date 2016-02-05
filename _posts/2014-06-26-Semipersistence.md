@@ -15,7 +15,7 @@ Using WinRAR, we can pack our payload with a vbscript that sleeps for 60 minutes
 With WinRAR installed, right click your favorite payload and select WinRar > Add to archive…
 The window below will pop up. Select Create SFX archive and keep the Archive format set to RAR. You should also give your payload wrapper an inconspicuous name.
 
-![]({site.url}/assets/semipersistence1.png){:height="400px"}
+![]({{site.url}}/assets/semipersistence1.png){:height="400px"}
 
 
 Now duplicate the payload that you just right-clicked and call it something different, it's renamed to `persistence_payload.exe` here. This will be the secondary payload that is run every 60-ish minutes. Why not just use the one payload? Just in case you can't migrate of off the original process, a second one is used for the persistence for safety.
