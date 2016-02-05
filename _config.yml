@@ -27,8 +27,10 @@ avatar: "/assets/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
-  Archive: "archive"
+  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-list-ul fa-stack-1x fa-inverse"></i></span> : "archive"
+  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span> : "https://github.com/bluscreenofjeff"
+  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span> : "https://twitter.com/bluscreenofjeff"
+  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span> : "http://bluscreenofjeff.com/feed.xml"
   
 # --- Footer options --- #
 
@@ -65,9 +67,15 @@ google_analytics: "UA-61938642-1"
 # Output options (more information on Jekyll's site)
 timezone: "America/Los Angeles"
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:{line_numbers: true}
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+gems: [jekyll-paginate]
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
