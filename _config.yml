@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://bluscreenofjeff.github.io"
+url: "https://bluscreenofjeff.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -144,6 +144,12 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
+url: https://bluescreenofjeff.com   # with the https protocol
+enforce_ssl: bluescreenofjeff.com   # without any protocol
+
+
+
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
