@@ -12,7 +12,10 @@ title: All Posts
 
 {% for post in site.posts %}
   <article class="post-preview">	
-    <h3 class="post-title"><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h3>
+    <a href="{{ post.url }}" class="post-title">
+    	<h3 class="post-title">{{ post.title }}</h3>
+    	<h3 class="post-subtitle">{{ post.subtitle }}</h3>
+    </a>
     <p class="tab"><span class="post-meta">{{ post.date | date: "%B %e, %Y" }}</span> . <span class="post-entry">{{ post.summary }}</span></p>
 {% endfor %}
 </article>

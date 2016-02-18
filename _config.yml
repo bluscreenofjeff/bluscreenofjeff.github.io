@@ -57,7 +57,7 @@ url-pretty: "bluescreenofjeff.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "pentestpenthouse"
+disqus: "bluescreenofjeff"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-61938642-1"
