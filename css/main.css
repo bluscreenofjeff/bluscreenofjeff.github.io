@@ -79,6 +79,8 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+  -webkit-filter: drop-shadow(3px 3px 3px #bfbfbf);
+  filter: drop-shadow(3px 3px 3px #bfbfbf);
 }
 
 .disqus-comments {
