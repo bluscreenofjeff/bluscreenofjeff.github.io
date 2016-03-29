@@ -142,6 +142,10 @@ The [P] flags at the end of the RewriteRule lines tell Apache to act as a proxy.
 
 Apache's mod_rewrite offers powerful functionality we can leverage to strengthen our phishing campaigns. mod_rewrite processes requests and serves resources based upon a ruleset configured either in the server config file or an *htaccess* file placed in the desired web directory. To gain value from mobile users clicking phishing links, we can redirect those users to a mobile-friendly malicious website, such as a credential capture.
 
+# Strengthen Your Phishing with Apache mod_rewrite Posts
+
+* Strengthen Your Phishing with Apache mod_rewrite and Mobile User Redirection
+* [Invalid URI Redirection]({{site.baseurl}}/2016-03-29-invalid-uri-redirection-with-apache-mod_rewrite/)
 
 {:#resources}
 
