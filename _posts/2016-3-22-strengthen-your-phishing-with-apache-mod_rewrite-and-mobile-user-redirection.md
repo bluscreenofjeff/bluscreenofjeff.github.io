@@ -146,6 +146,7 @@ Apache's mod_rewrite offers powerful functionality we can leverage to strengthen
 
 * Strengthen Your Phishing with Apache mod_rewrite and Mobile User Redirection
 * [Invalid URI Redirection]({{site.baseurl}}/2016-03-29-invalid-uri-redirection-with-apache-mod_rewrite/)
+* [Operating System Based Redirection with Apache mod_rewrite]({{site.baseurl}}/2016-04-05-operating-system-based-redirection-with-apache-mod_rewrite/)
 
 {:#resources}
 
