@@ -1,1 +1,1 @@
-bluscreenofjeff's blog built on Jekyll, hosted on Github Pages, and using the theme Beatutiful Jekyll.
+[bluscreenofjeff's blog](https://bluescreenofjeff.com) built on [Jekyll](https://jekyllrb.com/), hosted on [Github Pages](https://pages.github.com/), and using the theme [Beatutiful Jekyll](https://github.com/daattali/beautiful-jekyll).
