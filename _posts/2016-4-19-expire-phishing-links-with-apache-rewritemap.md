@@ -30,59 +30,34 @@ To validate the token, the Python script uses a line separated list of authorize
 The Python script writes a log file to the path `/var/expire/process_log.txt` for real-time tracking and troubleshooting.
 
 
-# Setup
 
 
-## Configure RewriteMap Script
+<div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
+RewriteEngine On<br>
+RewriteCond <span style="color: dodgerblue">%{HTTP_REFERER}</span> <span style="color: mediumseagreen">^http://phishdomain.com</span> <span style="color: tomato">[NC]</span><br>
+RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://TEAMSERVER-IP</span><span style="color: dodgerblue">%{REQUEST_URI}</span> <span style="color: tomato">[P]</span><br>
 
-First we need to configure the apache2 server to run our script and send requests to it when the variable remap is used. It's important to note that the script will be started and run continuously when the apache2 service starts. If changes are made to the script you will need to restart the apache2 service for changes to take effect. Similarly, if the script fails and stops filtering requests properly (or times out after one successful request), it is likely that there is an issue with the script that should be troubleshot by manually starting the script or checking Apache's error logs.
+RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">^id=(.*)</span><br>
+RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">/$1?id=${remap:%1}</span> <span style="color: tomato">[R=302]</span><br>
+RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">^id=nftoken</span> <span style="color: tomato">[OR]</span><br>
+RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">!^id=*</span><br>
+RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://COMPANY-DOMAIN/</span><span style="color: mediumvioletred">?</span> <span style="color: tomato">[L,R=302]</span><br>
+RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://TEAMSERVER-IP</span><span style="color: dodgerblue">%{REQUEST_URI}</span> <span style="color: tomato">[P]</span><br>
+</div>
 
-Within the apache config (`/etc/apache2/apache.conf` on a default Debian install), add the following text in the [server context](https://httpd.apache.org/docs/2.4/mod/directive-dict.html#Context) of the config:
+Line by line explanation:
 
-```apache
-RewriteEngine on
-RewriteMap remap prg:/var/expire/process.py
-```
-
-In order to use a *.htaccess* file to rewrite requests, we must tell apache to allow the files to override rules in the config. In the apache config, change **None** to **All** in the following block:
-
-```apache
-<Directory /var/www/>
-        Options Indexes FollowSymLinks
-        AllowOverride None
-        Require all granted
-</Directory>
-```
-
-
-Next, put the [Python script](https://github.com/bluscreenofjeff/Scripts/blob/master/Apache%20mod_rewrite/Link%20Expiration/process.py) at the path `/var/expire/process.py` on the server and change the ownership and permissions.
-
-```bash
-chown www-data:www-data /var/expire/process.py
-chmod 744 /var/expire/process.py
-```
-
-By default, the script considers a token 'spent' after one use. To change this number, edit line 9 of the code.
-
-**Note:** *If you are using Apache 2.2, you will need to configure a [RewriteLock](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html#rewritelock) setting to help prevent Apache or the script from hanging. Apache 2.4 handles this automatically.*
-
-## Authorized Users
-
-Get a list of tokens to allow through and place them in a line-separated file named `/var/expire/authusers.txt`. 
-
-If using [Cobalt Strike](https://www.cobaltstrike.com/) for spearphishing, you can filter based on the *%TOKEN%* string that is appended to your phishing page's URL. 
-
-To export the tokens from Cobalt Strike, go to Reporting -> Export Data. Exporting the tokens requires all phishes to be sent, so there will be some lag time between emails landing and filtering being fully implemented.
-
-If you are not using Cobalt Strike, you could manually add tokens to URLs or leverage similar functionality in the tool you are using to spearphish.
-
-
-## Create the *.htaccess* File
-
-The actual filtering will be handled by a *.htaccess* file. Place the file at the root of the web server; it will apply to all subdirectories.
-
-Within the *.htaccess file*, enter the following:
-
+<div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
+Enable the rewrite engine<br>
+<span style="color: dodgerblue">If the request's HTTP Referer</span> <span style="color: mediumseagreen"> starts with 'http://phishdomain.com' </span> <span style="color: tomato"> (ignoring case),</span><br>
+<span style="color: gold">Change the entire request</span> <span style="color: orange">to serve the </span><span style="color: dodgerblue">original request path</span> <span style="color: orange">from the teamserver's IP, </span><span style="color: tomato">and keep the user's address bar the same (obscure the teamserver's IP).</span><br>
+<span style="color: dodgerblue">If the request's query string</span> <span style="color: mediumseagreen">starts with 'id=', the text after 'id=' is assigned the variable name %1 and</span><br>
+<span style="color: gold">Change the entire request</span> <span style="color: orange"> to '/</span><span style="color: dodgerblue">original request path</span><span style="color: orange"> ?id=' and append the value returned by process.py.</span> <span style="color: tomato"> Redirect the user, changing the address bar, but continue evaluating rules.</span><br>
+<span style="color: dodgerblue">If the quest's query string</span> <span style="color: mediumseagreen">starts with 'id=nftoken'</span> <span style="color: tomato"> OR</span><br>
+<span style="color: dodgerblue">If the request's query string</span> <span style="color: mediumseagreen">does not start with 'id='</span><br>
+<span style="color: gold">Change the entire request</span> <span style="color: orange">to serve http://COMPANY-DOMAIN/</span> <span style="color: mediumvioletred">and drop any query_strings from original request.</span> <span style="color: tomato"> Do not evaluate further rules and redirect the user, changing their address bar.</span><br>
+<span style="color: gold">Otherwise, change the entire request</span> <span style="color: orange">to serve the </span><span style="color:dodgerblue">original request path</span> <span style="color: orange">from the teamserver's IP </span><span style="color: tomato">and keep the user's address bar the same (obscure the teamserver's IP).</span><br>
+</div>
 
 
 You will need to modify *phishdomain.com*, *TEAMSERVER-IP*, and *COMPANY-DOMAIN* to fit your campaign.
