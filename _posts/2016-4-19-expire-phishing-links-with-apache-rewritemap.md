@@ -6,7 +6,7 @@ summary: Use Apache's RewriteMap to perform advanced HTTP request redirection, s
 
 On more than a few occasions phishing recipients have forwarded my phish to IT. The first indication is usually when I'm watching the access logs like a hawk and see multiple GET requests with a user's token, yet haven't received any credentials or beacon sessions. Sometimes it turns out the user is being blocked by a technical control after the initial request, but other times we are told that the user did what their security training suggested and forwarded the email. Yay. 
 
-I don't like the thought of being one email forward away from IR having free reign to peruse my phishing site in a sandbox. For a while I've wanted to limit this ability, allowing users to navigate to the malicious website or payload only once and sending all subsequent visitors to an innocuous website. After diving into [mod_rewrite]({{ site.baseurl }}/2016-12-18-strengthen-phishing-with-apache-mod_rewrite/) recently, I found a method to accomplish this task natively in Apache with RewriteMap.
+I don't like the thought of being one email forward away from IR having free reign to peruse my phishing site in a sandbox. For a while I've wanted to limit this ability, allowing users to navigate to the malicious website or payload only once and sending all subsequent visitors to an innocuous website. After diving into [mod_rewrite]({{site.baseurl}}/2016-12-18-strengthen-phishing-with-apache-mod_rewrite/) recently, I found a method to accomplish this task natively in Apache with RewriteMap.
 
 
 # Intro
@@ -56,7 +56,7 @@ In order to use a *.htaccess* file to rewrite requests, we must tell apache to a
 ```
 
 
-Next, put the [Python script](test) at the path `/var/expire/process.py` on the server and change the ownership and permissions.
+Next, put the [Python script](https://github.com/bluscreenofjeff/Scripts/blob/master/Apache%20mod_rewrite/Link%20Expiration/process.py) at the path `/var/expire/process.py` on the server and change the ownership and permissions.
 
 ```bash
 chown www-data:www-data /var/expire/process.py
