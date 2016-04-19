@@ -39,7 +39,7 @@ First we need to configure the apache2 server to run our script and send request
 
 Within the apache config (`/etc/apache2/apache.conf` on a default Debian install), add the following text in the [server context](https://httpd.apache.org/docs/2.4/mod/directive-dict.html#Context) of the config:
 
-```apache
+```plaintext
 RewriteEngine on
 RewriteMap remap prg:/var/expire/process.py
 ```
