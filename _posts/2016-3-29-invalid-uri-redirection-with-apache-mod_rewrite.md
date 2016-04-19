@@ -47,7 +47,7 @@ Redirecting requests with invalid URIs can help a phishing website pass the snif
 * Invalid URI Redirection
 * [Operating System Based Redirection with Apache mod_rewrite]({{site.baseurl}}/2016-04-05-operating-system-based-redirection-with-apache-mod_rewrite/)
 * [Combatting Incident Responders with Apache mod_rewrite]({{site.baseurl}}/2016-04-12-combatting-incident-responders-with-apache-mod_rewrite/)
-
+* [Expire Phishing Links with Apache RewriteMap]({{site.baseurl}}/2016-04-19-expire-phishing-links-with-apache-rewritemap/)
 
 {:#resources}
 
