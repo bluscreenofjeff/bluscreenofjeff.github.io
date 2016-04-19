@@ -56,7 +56,7 @@ In order to use a *.htaccess* file to rewrite requests, we must tell apache to a
 ```
 
 
-Next, put the [Python script](https://github.com/bluscreenofjeff/Scripts/blob/master/Apache%20mod_rewrite/Link%20Expiration/process.py) at the path `/var/expire/process.py` on the server and change the ownership and permissions.
+Next, put the [Python script](test) at the path `/var/expire/process.py` on the server and change the ownership and permissions.
 
 ```bash
 chown www-data:www-data /var/expire/process.py
