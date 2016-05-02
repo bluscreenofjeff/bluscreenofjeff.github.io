@@ -106,6 +106,8 @@ a2enmod rewrite proxy proxy_http
 
 All of the examples below are made to be run in the Directory context, so it's recommended that you place the rulesets in a .htaccess file within the web server's root directory. htaccess files should have permissions of 644.
 
+*Update for clarity: You will need to restart the apache2 service after enabling or disabling Apache modules. a2enmod may require sudo rights, depending on your configuration.*
+
 {:#user-agent-redirection}
 
 # User Agent Redirection
