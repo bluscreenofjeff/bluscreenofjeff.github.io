@@ -3,6 +3,9 @@ layout: post
 title: Fresh Veil
 subtitle: Automatically Generating Payloads
 summary: Keep your Veil payloads fresh to avoid getting caught by 
+tags:
+- veil
+- payloads
 ---
 
 Veil is awesome - it makes payload generation easy and supports a wide variety of payloads with new ones being dropped pretty often.

@@ -2,6 +2,8 @@
 layout: post
 title: Hit the Ground Running- Automating Metasploit
 summary: Use resource scripts to run common Metasploit tasks quickly
+tags:
+- metasploit
 ---
      
 There are a number of commands that tend to get run on every session on a target I get in Metasploit. Using resource files, these commands can be automated to dump as much information as possible, as quickly as possible. This can be combined with an MSFConsole autostart script to automate the starting of handlers and pre-fill options for post modules that don't need to be run on every session.

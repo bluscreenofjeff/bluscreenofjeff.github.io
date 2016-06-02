@@ -24,6 +24,17 @@ layout: default
   </div>
 </article>
 
+{% if page.tags %}
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><br>
+    <span class="post-meta">Tags: <span> 
+    {% for tag in page.tags %} 
+      <a href='/tags#{{tag}}'><span class="label label-primary">{{tag}}</span></a> 
+    {% endfor %}
+  </div>
+</div><br>
+{% endif %}
+
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <ul class="pager blog-pager">

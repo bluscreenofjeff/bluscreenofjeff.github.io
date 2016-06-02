@@ -2,6 +2,8 @@
 layout: post
 title: Semi-Persistence
 summary: How to get some semi-persistence using VBScript
+tags:
+- payloads
 ---
      
 

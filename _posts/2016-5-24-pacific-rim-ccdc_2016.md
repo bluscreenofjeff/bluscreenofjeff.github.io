@@ -2,6 +2,10 @@
 layout: post
 title: Red Teaming for Pacific Rim CCDC 2016
 summary: Preparation, Automation, Aggressor Scripts, and thoughts about 2016's Pacific Rim CCDC. 
+tags:
+- ccdc
+- cobalt strike
+- aggressor
 ---
 
 Six weeks ago I had the opportunity to Red Team for [Pacific Rim CCDC](https://www.prccdc.org/). I love doing this competition because it gives me a chance to do things one would never be allowed to do on a real network and it forces me think about a different set of problems than a pentest or red team engagement. In this post I will discuss my thoughts and experiences before, during, and after this year's competition. 

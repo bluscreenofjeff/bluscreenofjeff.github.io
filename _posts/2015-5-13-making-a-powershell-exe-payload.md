@@ -2,6 +2,9 @@
 layout: post
 title: Making a Powershell EXE Payload
 summary: A script to make a powershell payload into an executable
+tags:
+- payloads
+- powershell
 ---
 
 I've been using TrustedSec's [Unicorn](https://github.com/trustedsec/unicorn) a LOT over the past few months. In fact, it's become my go-to payload to pop a box. While it's awesome to be able to paste a command and get a shell, sometimes an EXE is required.

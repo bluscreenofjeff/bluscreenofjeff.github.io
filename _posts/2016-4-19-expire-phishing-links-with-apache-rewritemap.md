@@ -2,6 +2,9 @@
 layout: post
 title: Expire Phishing Links with Apache RewriteMap
 summary: Use Apache's RewriteMap to perform advanced HTTP request redirection, such as expiring phishing links and round-robin redirecting users to payloads.
+tags: 
+- mod_rewrite
+- phishing
 ---
 
 On more than a few occasions phishing recipients have forwarded my phish to IT. The first indication is usually when I'm watching the access logs like a hawk and see multiple GET requests with a user's token, yet haven't received any credentials or beacon sessions. Sometimes it turns out the user is being blocked by a technical control after the initial request, but other times we are told that the user did what their security training suggested and forwarded the email. Yay. 

@@ -2,6 +2,8 @@
 layout: post
 title: How I Prepared to Red Team at PRCCDC 2015
 summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition
+tags:
+- ccdc
 ---
 
 I had the opportunity to take part in the Pacific Rim CCDC this past weekend and it was a BLAST! It was my first CCDC, so I really didn't know what to expect. I did know that the last thing I would want to be doing is installing and configuring tools during test time.

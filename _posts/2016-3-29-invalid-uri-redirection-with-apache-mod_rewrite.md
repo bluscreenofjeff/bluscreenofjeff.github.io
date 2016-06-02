@@ -2,6 +2,9 @@
 layout: post
 title: Invalid URI Redirection with Apache mod_rewrite
 summary: How to redirect users visiting non-existent file paths in your phishing infrastructure to a different site.
+tags: 
+- mod_rewrite
+- phishing
 ---
 
 There have been times when a curious phish recipient or a zealous help desk staff has loaded the phishing link in their browser and decided to take a peek at a higher directory or the root domain. Of course, most times there isn't much else site to see. In those cases, the chances of being reported to IR went up significantly, sometimes leading to a phishing campaign being blocked. This is where invalid URI redirection comes in handy.
