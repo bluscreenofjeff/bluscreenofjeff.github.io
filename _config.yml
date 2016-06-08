@@ -27,6 +27,7 @@ avatar: "/assets/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
+  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span> : "about"
   <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-list-ul fa-stack-1x fa-inverse"></i></span> : "archive"
   <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tags fa-stack-1x fa-inverse"></i></span> : "tags"
   <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span> : "https://github.com/bluscreenofjeff"

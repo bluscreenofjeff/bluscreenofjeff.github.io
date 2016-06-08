@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Apache mod_rewrite
+title: Posts Sorted by Tag
 permalink: /tags
 ---
 

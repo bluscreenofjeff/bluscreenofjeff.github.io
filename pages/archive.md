@@ -1,6 +1,7 @@
 ---
 layout: default
 title: All Posts
+permalink: /archive
 ---
 
 <div class="text-center">

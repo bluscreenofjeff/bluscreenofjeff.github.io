@@ -77,5 +77,11 @@
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
-  
+
+   
+ {% if page.noindex %}
+ <!-- meta robots -->
+  <meta name="robots" content="noindex, nofollow" />
+ {% endif %}
+
 </head>
