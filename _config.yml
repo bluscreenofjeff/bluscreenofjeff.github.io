@@ -27,12 +27,12 @@ avatar: "/assets/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span> : "https://github.com/bluscreenofjeff"
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span> : "https://twitter.com/bluscreenofjeff"
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span> : "http://bluscreenofjeff.com/feed.xml"
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span> : "about"
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-list-ul fa-stack-1x fa-inverse"></i></span> : "archive"
-  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tags fa-stack-1x fa-inverse"></i></span> : "tags"
+  <span class="fa-stack fa-lg" title="GitHub"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span> : "https://github.com/bluscreenofjeff"
+  <span class="fa-stack fa-lg" title="Twitter"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span> : "https://twitter.com/bluscreenofjeff"
+  <span class="fa-stack fa-lg" title="RSS Feed"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span> : "http://bluscreenofjeff.com/feed.xml"
+  <span class="fa-stack fa-lg" title="About"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span> : "about"
+  <span class="fa-stack fa-lg" title="Post Archive"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-list-ul fa-stack-1x fa-inverse"></i></span> : "archive"
+  <span class="fa-stack fa-lg" title="Posts by Tag"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tags fa-stack-1x fa-inverse"></i></span> : "tags"
   
 # --- Footer options --- #
 
