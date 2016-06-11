@@ -76,7 +76,7 @@
   <meta property="og:image" content="" />
   {% endif %}
 
-{% if post.content %}
+{% if page.content %}
   <meta property="og:description" content="{{ post.content | truncatewords: 50 | strip_html | xml_escape}}">
 {% else %}
 <meta property="og:description" content="">
