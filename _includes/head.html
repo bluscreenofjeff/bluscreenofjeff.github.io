@@ -70,10 +70,8 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
   
-  {% if page.fb-img %}
-  <meta property="og:image" content="{{ page.fb-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% if post.featuredimage %}
+  <meta property="og:image" content="{{ site.url }}{{ post.featuredimage }}" />
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
