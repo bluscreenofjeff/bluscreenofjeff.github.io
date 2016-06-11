@@ -2,7 +2,8 @@
 layout: post
 title: Fresh Veil
 subtitle: Automatically Generating Payloads
-summary: Keep your Veil payloads fresh to avoid getting caught by 
+summary: Keep your Veil payloads fresh to avoid getting caught by AV.
+featuredimage: /assets/freshveil1.png
 tags:
 - veil
 - payloads
