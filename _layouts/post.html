@@ -35,6 +35,52 @@ layout: default
 </div><br>
 {% endif %}
 
+
+{% assign RELATED_POSTS_THRESHOLD = 3 %}
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><br>
+    <span class="post-meta"><b>Recommended Posts:</b> <span> 
+  {% assign related_post_count = 0 %}
+  {% for post in site.related_posts %}
+    {% if related_post_count == RELATED_POSTS_THRESHOLD %}
+      {% break %}
+    {% endif %}
+    {% for tag in post.tags %}
+      {% if page.tags contains tag %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">
+              <h4>{{ post.title }}</h4>
+            </a>
+        {% assign related_post_count = related_post_count | plus: 1 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% assign posts_left = RELATED_POSTS_THRESHOLD | minus: related_post_count %}
+  {% unless posts_left == 0 %}
+    {% for post in site.related_posts %}
+      {% if posts_left == 0 %}
+        {% break %}
+      {% endif %}
+
+      {% assign already_related = false %}
+      {% for tag in post.tags %}
+        {% if page.tags contains tag %}
+          {% assign already_related = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% unless already_related %}
+        {% assign posts_left = posts_left | minus: 1 %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">
+              <h4>{{ post.title }}</h4>
+            </a>
+      {% endunless %}
+    {% endfor %}
+  {% endunless %}
+  </div>
+</div><br>
+
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <ul class="pager blog-pager">
