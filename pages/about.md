@@ -11,5 +11,9 @@ I'm a pentester and red teamer at [Veris Group](https://www.verisgroup.com/)'s A
 
 In my free time, I spin up scripts, tutorials, and tradecraft to help pay forward all the help and guidance I've received.
 
-Hit me up on Twitter at [@bluscreenofjeff](https://twitter.com/bluscreenofjeff), or don't.
+Hit me up on: 
 
+* Twitter at [@bluscreenofjeff](https://twitter.com/bluscreenofjeff)
+* GitHub at [bluscreenofjeff](https://github.com/bluscreenofjeff)
+* Keybase.io at [bluescreenofjeff](https://keybase.io/bluescreenofjeff)
+* Freenode at **bluescreenofjeff** in #psempire and #armitage
