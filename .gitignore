@@ -2,3 +2,5 @@ _site
 .sass-cache
 _drafts
 _scratch
+.DS_Store
+.gitignore
