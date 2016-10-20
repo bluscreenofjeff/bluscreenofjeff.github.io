@@ -39,7 +39,7 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Jeff
+  name: Jeff Dimmock
   github: bluscreenofjeff    
   twitter: bluscreenofjeff   
 # Select which links to show in the footer
