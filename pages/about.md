@@ -16,4 +16,5 @@ Hit me up on:
 * Twitter at [@bluscreenofjeff](https://twitter.com/bluscreenofjeff)
 * GitHub at [bluscreenofjeff](https://github.com/bluscreenofjeff)
 * Keybase.io at [bluescreenofjeff](https://keybase.io/bluescreenofjeff)
-* Freenode at **bluescreenofjeff** in #psempire and #armitage
+* Slack at [AdaptiveEmpire](http://adaptiveempire.herokuapp.com/) and [BloodHoundGang](http://bloodhoundgang.herokuapp.com/) as **bluescreenofjeff**
+* Freenode in *#psempire* and *#armitage* as **bluescreenofjeff**
