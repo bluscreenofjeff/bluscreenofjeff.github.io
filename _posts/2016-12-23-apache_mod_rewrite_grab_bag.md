@@ -72,7 +72,7 @@ ErrorDocument 404 <span style="color: dodgerblue">http://REDIRECTION-URL.com/</s
  
 If you are only using your Apache server for redirection this is a quick method of filtering requests for invalid URIs. But, keep in mind that Apache will serve any valid files requested
 
-# Block Unexpected HTTP Methods
+# Block Non-Standard HTTP Methods
 Just as pentesters will use non-standard HTTP methods to gather intelligence from a target server, incident responders can use these HTTP methods against our infrastructure. To reduce that risk, we can allow GET and POST requests and redirect all others with the following ruleset:
 
 <div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
