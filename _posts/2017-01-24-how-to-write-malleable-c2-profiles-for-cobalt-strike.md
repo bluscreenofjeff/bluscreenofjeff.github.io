@@ -101,7 +101,7 @@ d9e<br>
 
 ## HTTPS Certificate
 
-For our new profile, we'll first configure the HTTP certificate. Filling in the HTTPS certificate is usually straight forward: load the target domain in a browser and copy the details from the legitimate certificate. Unfortunately, some websites just do not have an SSL certificate. In those cases, the target's parent company may have a certificate from which you can take details. Otherwise, guesswork will be required.
+For our new profile, we'll first configure the HTTPS certificate. Filling in the HTTPS certificate is usually straight forward: load the target domain in a browser and copy the details from the legitimate certificate. Unfortunately, some websites just do not have an SSL certificate. In those cases, the target's parent company may have a certificate from which you can take details. Otherwise, guesswork will be required.
 
 One quirk I've encountered is that *c2lint* (the Malleable C2 profile testing tool -- more on that later) may fail if you use punctuation in any of the fields. If your certificate isn't generating properly, try removing the punctuation.
 
