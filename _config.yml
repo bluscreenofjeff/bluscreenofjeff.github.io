@@ -32,7 +32,7 @@ navbar-links:
   "Tags" : "tags"
   "Twitter" : "https://twitter.com/bluscreenofjeff"
   "GitHub" : "https://github.com/bluscreenofjeff"
-  "RSS" : "http://bluscreenofjeff.com/feed.xml"
+  "RSS" : "https://bluescreenofjeff.com/feed.xml"
   
 
 #Old
@@ -85,7 +85,7 @@ kramdown:
   syntax_highlighter_opts:{line_numbers: true}
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 10
 gems: [jekyll-paginate]
 
 # Default YAML values (more information on Jekyll's site)
