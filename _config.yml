@@ -28,12 +28,13 @@ avatar: "/assets/avatar-icon.png"
 # List of links in the navigation bar
 navbar-links:
   "About" : "about"
-  "Archive" : "archive"
+  "Posts" : "posts"
   "Tags" : "tags"
+  "Talks" : "talks"
   "Twitter" : "https://twitter.com/bluscreenofjeff"
   "GitHub" : "https://github.com/bluscreenofjeff"
   "RSS" : "https://bluescreenofjeff.com/feed.xml"
-  
+
 
 #Old
 #<span class="fa-stack fa-lg" title="GitHub"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span> : "https://github.com/bluscreenofjeff"
@@ -42,15 +43,15 @@ navbar-links:
 #  <span class="fa-stack fa-lg" title="About"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span> : "about"
 #  <span class="fa-stack fa-lg" title="Post Archive"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-list-ul fa-stack-1x fa-inverse"></i></span> : "archive"
 #  <span class="fa-stack fa-lg" title="Posts by Tag"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tags fa-stack-1x fa-inverse"></i></span> : "tags"
-  
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Jeff Dimmock
-  github: bluscreenofjeff    
-  twitter: bluscreenofjeff   
+  github: bluscreenofjeff
+  twitter: bluscreenofjeff
 # Select which links to show in the footer
 footer-links-active:
   rss: true

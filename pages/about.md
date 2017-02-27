@@ -5,13 +5,16 @@ permalink: /about
 noindex: true
 ---
 
-# About
+<div class="text-center">
+	<h1>About</h1>
+	<br/>
+</div>
 
-I'm a pentester and red teamer at [Veris Group](https://www.verisgroup.com/)'s Adaptive Threat Division.
+I'm a pentester and red teamer.
 
 In my free time, I spin up scripts, posts, and tradecraft to help pay forward all the help and guidance I've received.
 
-Hit me up on: 
+Hit me up on:
 
 * Twitter at [@bluscreenofjeff](https://twitter.com/bluscreenofjeff)
 * GitHub at [bluscreenofjeff](https://github.com/bluscreenofjeff)
