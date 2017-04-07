@@ -100,7 +100,7 @@ In the time leading up to the official start, I pasted every single command from
 
 ### Defacement
 Though this was my first rodeo, I knew that there would be opportunities to deface some web interfaces and I wanted to be ready to bring some lulz. This is what I settled on:
-![I am invincible!]({{site.url}}/assets/prccdc2015-defacement.gif)
+![I am invincible!](/assets/prccdc2015/prccdc2015-defacement.gif)
 [Source](https://github.com/bluscreenofjeff/CCDC-Scripts/tree/master/website-defacement)
 
 Looking back now, I should have also gathered some nice gifs about patching or host hardenening.

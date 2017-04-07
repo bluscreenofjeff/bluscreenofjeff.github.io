@@ -27,7 +27,7 @@ The `/root/payload_temp` directory is where we’ll generate the payload before 
 
 
 Let’s take a look at Veil’s command line options:
-![]({{site.url}}/assets/freshveil1.png){: height="400px"}
+![Veil's Commandline Options](/assets/freshveil/freshveil1.png)
 
 
 Using these options, you can generate any payload from within Veil from the command line.
