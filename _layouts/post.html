@@ -10,7 +10,15 @@ layout: default
         {% if page.subtitle %}
         <h2 class="post-subheading">{{ page.subtitle }}</h2>
         {% endif %}
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span> - 
+        <span class="post-meta" style="text-align:right;">
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 min read
+          {% else %}
+          {{ words | divided_by:180 }} min read
+          {% endif %}
+        </span>
       </div>
      </div>
   </div>
@@ -25,11 +33,17 @@ layout: default
 </article>
 
 {% if page.tags %}
+<style>
+.site-tag a {
+    display: inline;
+    padding-right: 15px;
+}
+</style>
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><br>
     <span class="post-meta">Tags: <span> 
     {% for tag in page.tags %} 
-      <a href='/tags#{{tag}}'><span class="label label-primary">{{tag}}</span></a> 
+      <a href='/tags#{{tag}}'><span class="site-tag">{{tag}}</span></a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
   </div>
 </div><br>
