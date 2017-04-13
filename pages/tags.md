@@ -19,12 +19,6 @@ description: All posts on bluescreenofjeff.com, sorted by subject tag
 <div class="container-fluid">		
 <div class="row">
 
-<!-- 	{% for tag in site.tags %}
-		{% assign t = tag | first %}
-		{% assign posts = tag | last %}
-		<div class="col-lg-2 col-md-3 col-xs-4" style="padding:3px;"><a href = "#{{t | downcase }}"><button class="btn btn-primary" type="button">{{t | downcase }}</button></a></div>
-	{% endfor %} -->
-
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
