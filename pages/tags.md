@@ -2,6 +2,7 @@
 layout: default
 title: Posts Sorted by Tag
 permalink: /tags
+description: All posts on bluescreenofjeff.com, sorted by subject tag
 ---
 
 <div class="row">

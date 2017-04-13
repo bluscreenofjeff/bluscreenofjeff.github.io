@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about
 noindex: true
+description: I'm a pentester and red teamer. In my free time, I spin up scripts, posts, and tradecraft to help pay forward all the help and guidance I've received. Hit me up on...
 ---
 
 <div class="text-center">

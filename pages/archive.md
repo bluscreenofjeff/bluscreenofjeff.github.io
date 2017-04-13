@@ -2,6 +2,7 @@
 layout: default
 title: All Posts
 permalink: /archive
+description: Archive of all posts on bluescreenofjeff.com
 ---
 
 <div class="text-center">

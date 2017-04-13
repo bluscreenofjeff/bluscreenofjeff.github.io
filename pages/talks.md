@@ -2,6 +2,7 @@
 layout: default
 title: Talks
 permalink: /talks
+description: Talks given by bluescreenofjeff
 ---
 
 <div class="text-center">

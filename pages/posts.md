@@ -2,6 +2,7 @@
 layout: default
 title: All Posts
 permalink: /posts
+description: All posts on bluescreenofjeff.com
 ---
 
 <div class="text-center">

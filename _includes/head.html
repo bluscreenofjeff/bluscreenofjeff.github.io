@@ -76,8 +76,13 @@
   <meta property="og:image" content="" />
   {% endif %}
 
-<meta property="og:description" content="{{ page.content | truncatewords: 50 | strip_html | xml_escape}}">
-   
+  {% if page.layout == 'post' %}
+    <meta property="og:description" content="{{ page.content | truncatewords: 50 | strip_html | xml_escape}}">
+  {% else %}
+    <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}">
+  {% endif %}
+
+
  {% if page.noindex %}
  <!-- meta robots -->
   <meta name="robots" content="noindex, nofollow" />
