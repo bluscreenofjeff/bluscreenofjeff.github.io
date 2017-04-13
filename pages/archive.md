@@ -2,6 +2,7 @@
 layout: default
 title: All Posts
 permalink: /archive
+featuredimage:
 description: Archive of all posts on bluescreenofjeff.com
 ---
 

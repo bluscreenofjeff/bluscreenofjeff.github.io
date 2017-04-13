@@ -78,6 +78,8 @@
 
   {% if page.layout == 'post' %}
     <meta property="og:description" content="{{ page.content | truncatewords: 50 | strip_html | xml_escape}}">
+    <meta name="twitter:label1" value="Posted" />
+    <meta name="twitter:data1" value="{{ page.date | date: '%B %d, %Y' }}" />
   {% else %}
     <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}">
   {% endif %}
