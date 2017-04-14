@@ -4,7 +4,7 @@ layout: default
 
 <header class="header-post">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
       <div class="post-heading">
         <h1>{{ page.title }}</h1>
         {% if page.subtitle %}
@@ -26,7 +26,7 @@ layout: default
 
 <article>
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 	  {{ content }}
 	</div>
   </div>
@@ -40,7 +40,7 @@ layout: default
 }
 </style>
 <div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><br>
+  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1"><br>
     <span class="post-meta">Tags: <span> 
     {% for tag in page.tags %} 
       <a href='/tags#{{tag}}'><span class="site-tag">{{tag}}</span></a>{% unless forloop.last %}, {% endunless %}
