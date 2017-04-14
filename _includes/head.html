@@ -63,6 +63,7 @@
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:creator" content="@bluscreenofjeff" />
   
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
@@ -80,6 +81,14 @@
     <meta property="og:description" content="{{ page.content | truncatewords: 50 | strip_html | xml_escape}}">
     <meta name="twitter:label1" value="Posted" />
     <meta name="twitter:data1" value="{{ page.date | date: '%B %d, %Y' }}" />
+    <meta name="twitter:label2" value="Read Time" />
+    <meta name="twitter:data2" value="{% assign words = content | number_of_words %}
+      {% if words < 360 %}
+        1 min read
+      {% else %}
+        {{ words | divided_by:180 }} min read
+      {% endif %}
+    " />
   {% else %}
     <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}">
   {% endif %}
