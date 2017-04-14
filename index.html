@@ -20,12 +20,16 @@ description: Jeff Dimmock's information security blog. Primarily focuses on pene
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Posted on {{ post.date | date: "%B %-d, %Y" }} - {% assign words = post.content | number_of_words %}{% if words < 360 %}1 min read{% else %}{{ words | divided_by:180 }} min read{% endif %}
     </p>
-  
+
     <div class="post-entry">
-      {{ post.content | truncatewords: 75 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    {% if post.featuredimage %}
+        {{ post.content | truncatewords: 75 | strip_html | xml_escape}} <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a><br>
+        <img src = "{{ post.featuredimage }}" />
+    {% else %}
+      {{ post.content | truncatewords: 75 | strip_html | xml_escape}} <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    {% endif %}
     </div>
   
    </article>

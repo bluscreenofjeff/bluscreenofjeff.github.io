@@ -2,7 +2,7 @@
 layout: post
 title: How I Prepared to Red Team at PRCCDC 2015
 summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition
-featuredimage: /assets/prccdc2015-defacement.gif
+featuredimage: /assets/prccdc2015/prccdc2015-defacement.gif
 tags:
 - ccdc
 ---
