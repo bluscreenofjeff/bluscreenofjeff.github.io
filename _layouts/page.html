@@ -1,17 +1,21 @@
 ---
 layout: default
 ---
-
+{% if page.title == 'bluescreenofjeff.com' %}
+	<img src="/assets/bluescreenofjeff-cover.png" class="site-cover-image" />
+{% endif %}
 {% if page.title %}
 <header class="header-page">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <div class="page-heading">
-	    <h1>{{ page.title }}</h1>
-	    {% if page.subtitle %}
-	    <hr class="small">
-	    <span class="page-subheading">{{ page.subtitle }}</span>
-	    {% endif %}
+	  {% if page.title != 'bluescreenofjeff.com' %}
+		    <h1>{{ page.title }}</h1>
+		    {% if page.subtitle %}
+		    <hr class="small">
+		    <span class="page-subheading">{{ page.subtitle }}</span>
+		    {% endif %}
+	   {% endif %}
 	  </div>
     </div>
   </div>

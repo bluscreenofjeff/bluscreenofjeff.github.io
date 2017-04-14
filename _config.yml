@@ -86,7 +86,7 @@ kramdown:
   syntax_highlighter_opts:{line_numbers: true}
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 10
+paginate: 5
 gems: [jekyll-paginate]
 
 # Default YAML values (more information on Jekyll's site)
