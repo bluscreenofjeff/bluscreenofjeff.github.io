@@ -423,6 +423,12 @@ header.header-post .post-heading .post-subheading {
   margin-bottom: 0;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 /* Cover Page Text Dynamic Margin */
 
 @media all and (min-width: 50px)  {  .posts-list  { margin-top:0px;  } .site-cover-image { position:absolute;top:20px;left:0;right:0;}}

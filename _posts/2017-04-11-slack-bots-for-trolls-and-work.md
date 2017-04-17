@@ -15,7 +15,7 @@ In the (belated) spirit of April Fool's Day, I wanted to slightly diverge from a
 
 [Incoming Webhooks](https://api.slack.com/incoming-webhooks) allow external applications to post into Slack. The webhook processes HTTP requests sent to a provided URL. The data is stored in a JSON payload and processed by Slack on receipt. Incoming webhooks are a good choice when you want to post data into Slack from an external source that wasn't requested by a user. Incoming webhooks can currently only post in public channels, they do not support direct messages, group chats, or private channels.
 
-![Webhook diagram](/assets/slackbot/webhook-diagram.png)
+![Webhook diagram](/assets/slackbot/webhook-diagram.png){: .center-image}
 
 To use incoming webhooks, you need to add and configure the integration in your team's Slack settings.
 
@@ -44,7 +44,7 @@ Basic usage example with curl:
 curl -X POST --data-urlencode 'payload={"username": "Out-of-Towner", "icon_emoji": ":awha:", "channel": "#general", "text":"But what kind? What kind of shark?"}' https://hooks.slack.com/services/AAAAAAAAA/BBBBBBBBB/CCCCCCCCCCCCCCCCCCCCCCCC
 ```
 
-![Webhook example](/assets/slackbot/webhook-example.png)
+![Webhook example](/assets/slackbot/webhook-example.png){: .center-image}
 
 The *payload* section of the request is where the magic happens. We used it to configure the bot's username, the bot icon (*icon_emoji*), channel, and message text. Since we can modify this info on the fly, we really only need one webhook integration for all of our bots.
 
@@ -101,7 +101,7 @@ on event_join {
 Each event returns various arguments that can be used within their scriptblock. For example, [on event_beacon_initial](https://www.cobaltstrike.com/aggressor-script/events.html#event_beacon_initial) returns the contents of the event message as $1 and the message post timestamp as $2. The arguments are passed to *sendMessage*, with extra text as needed, for sending. We individually define the argument mapping and test for an enabled value of 'true' for each event in the final script.
 
 Here's the script in action:
-![Cobalt Strike webhook demo](/assets/slackbot/cs-webhook-demo.gif)
+![Cobalt Strike webhook demo](/assets/slackbot/cs-webhook-demo.gif){: .center-image}
 
 >Sidenote: To get the script to run even when no users are connected, use [agscript](https://www.cobaltstrike.com/aggressor-script/index.html) within screen on the teamserver.
 
@@ -113,7 +113,7 @@ For another example of using incoming webhooks with Cobalt Strike, check out the
 
 Here's how the whole process works:
 
-![Slash command diagram](/assets/slackbot/slash-command-diagram.png)
+![Slash command diagram](/assets/slackbot/slash-command-diagram.png){: .center-image}
 
 When a user runs the slash command, Slack sends the following information to the configured server:
 
@@ -145,7 +145,7 @@ The Method can remain POST. The options provided are POST and GET.
 
 We'll fill in the remaining info and click save.
 
-![Slash command setup](/assets/slackbot/slash-command-setup.png)
+![Slash command setup](/assets/slackbot/slash-command-setup.png){: .center-image}
 
 Note the token string. We will use that to filter unwanted requests to the server.
 
@@ -191,7 +191,7 @@ python trollbot.py
 
 Here's a demo of the script in action:
 
-![Trollbot Demo](/assets/slackbot/trollbot-demo.gif)
+![Trollbot Demo](/assets/slackbot/trollbot-demo.gif){: .center-image}
 
 # Other Evil Ideas
 
@@ -210,7 +210,7 @@ done
 
 A Bash script is available [here](https://github.com/bluscreenofjeff/SlackBots/blob/master/chat-spam.sh) for ease.
 
-![Chat spam](/assets/slackbot/chat-spam.png)
+![Chat spam](/assets/slackbot/chat-spam.png){: .center-image}
 
 Slack limits incoming webhooks to one message per second, but it does "[allow bursts over that limit for short periods](https://api.slack.com/docs/rate-limits)." In my "testing" I've found the bursts are generous. In fact, if you run a few of these loops in parallel, you can post so much that it causes everyone's Slack app to slow down to the point of being unusable. Not that I know that from experience...
 
@@ -228,7 +228,7 @@ Since the story will take longer than the three seconds Slack expects its respon
 
 When the command `/storytime` is issued, the bot will run.
 
-![StoryBot](/assets/slackbot/storybot.png)
+![StoryBot](/assets/slackbot/storybot.png){: .center-image}
 
 Using the script provided, it would be trivial to add more stories to the bot and trigger different ones with the slash command, like `/storytime spooky`.
 
@@ -257,7 +257,7 @@ c = str(soup.find('a', {'data-nav':'followers'}).contents).split('data-count="')
 
 The script concatenates the follower count with a random snarky phrase about fame (pulled from a hardcoded list on line 37) and returns an In Channel message:
 
-![Famecheck Bot](/assets/slackbot/famecheck-bot.png)
+![Famecheck Bot](/assets/slackbot/famecheck-bot.png){: .center-image}
 
 Errors are returned as an Ephemeral message.
 
