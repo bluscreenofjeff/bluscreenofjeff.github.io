@@ -7,6 +7,7 @@ tags:
 - cobalt strike
 - aggressor
 featuredimage: /assets/slackbot/slash-command-diagram.png
+coverimage: /assets/slackbot/slash-command-setup.png
 ---
 
 In the (belated) spirit of April Fool's Day, I wanted to slightly diverge from a strictly infosec topic and talk about something that can be used for good (work) or evil (trolling coworkers): Slack bots.
@@ -22,7 +23,7 @@ To use incoming webhooks, you need to add and configure the integration in your 
 ## Setup Steps
 In the Slack application or web interface, click the Team dropdown in the top-left. Select `Apps and Integrations`, then click `Browse` in the top-right, and search for "Incoming WebHooks" in the search bar. Click `Add Configuration` to add an incoming webhook to your channel.
 
-* Set `Post to Channel` to any channel. You can specify the channel the post will be send to with JSON later.
+* Set `Post to Channel` to any channel. You can specify the channel the post will be sent to with JSON later.
 
 * Click Add Incoming WebHooks Integration.
 
@@ -168,7 +169,7 @@ Our server script will rely on the Python [Bottle](https://bottlepy.org/docs/dev
 pip install bottle
 ```
 
-Next, we put our script, `trollboy.py`, and our dictionary of trolls, `trolldict.txt`, up on the server.
+Next, we put our script, `trollbot.py`, and our dictionary of trolls, `trolldict.txt`, up on the server.
 
 Modify the following settings in `trollbot.py`, as needed:
 * Change the *slack_token* variable on line 19 to your slash command's token. This is **required** for the script to work properly.
@@ -224,7 +225,7 @@ The Slack and server setup are the same as the troll bot example above, with a f
 * The script is `storybot.py`
 * The story itself will be put in `story.txt`, which is configurable with the *storyfile* variable on line 22.
 
-Since the story will take longer than the three seconds Slack expects its response within, we'll return an ephemeral response to the user who triggered the story as an acknowledgement and use incoming webhooks to post the story. The story will be pulled from a text file with each message's text on a new line. To pace the story correctly, we'll add some random sleep times between lines.
+Since the story will take longer than the three seconds Slack expects its response within, we'll return an ephemeral response to the user who triggered the story as an acknowledgment and use incoming webhooks to post the story. The story will be pulled from a text file with each message's text on a new line. To pace the story correctly, we'll add some random sleep times between lines.
 
 When the command `/storytime` is issued, the bot will run.
 
@@ -269,4 +270,4 @@ Slack also provides a [Bot User API](https://api.slack.com/bot-users), which all
 This post focused on Slack; however, most of the functionality covered should be possible on competing platforms. Both [HipChat](https://www.hipchat.com/docs/apiv2) and [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots) provide APIs for third-party integrations.
 
 # Summary
-We covered the incredibly useful incoming webhook and slash command APIs in Slack and demonstrated a few ways they can be used for work, such as integrating Cobalt Strike with Slack, and for fun, such as annoying coworkers. The post only scratches the surface of how powerful Slack integrations are. If these examples interested you, I encourage you to check out some of the cool ways people have integrated third-party applications with Slack and try it on your own. I'd love to hear about any Slack bots you come up with, especially those designed to annoy and harrass those in your Slack team!
+We covered the incredibly useful incoming webhook and slash command APIs in Slack and demonstrated a few ways they can be used for work, such as integrating Cobalt Strike with Slack, and for fun, such as annoying coworkers. The post only scratches the surface of how powerful Slack integrations are. If these examples interested you, I encourage you to check out some of the cool ways people have integrated third-party applications with Slack and try it on your own. I'd love to hear about any Slack bots you come up with, especially those designed to annoy and harass those in your Slack team!
