@@ -77,8 +77,14 @@
   {% endif %}
   
   <!-- Facebook OpenGraph tags -->
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  
+  {% if page.layout == 'post' %}
+  <meta property="og:type" content="article" />
+  {% else %}
   <meta property="og:type" content="website" />
+  {% endif %}
   
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
@@ -92,12 +98,17 @@
   <meta property="og:image" content="" />
   {% endif %}
 
+  <meta property="og:site_name" content="bluescreenofjeff.com">
+
   {% if page.layout == 'post' %}
     <meta property="og:description" content="{{ page.content | truncatewords: 50 | strip_html | xml_escape}}">
     <meta name="twitter:label1" value="Posted" />
     <meta name="twitter:data1" value="{{ page.date | date: '%B %d, %Y' }}" />
     <meta name="twitter:label2" value="Read Time" />
     <meta name="twitter:data2" value="{% assign words = content | number_of_words %}{% if words < 360 %}1 min read{% else %}{{ words | divided_by:180 | minus:1 }} min read{% endif %}" />
+    <meta property="article:publisher" content="https://bluescreenofjeff.com" />
+    <meta property="article:author" content="https://twitter.com/bluscreenofjeff" />
+    <meta property="article:published_time" content="{{ page.date }}" />
   {% else %}
     <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}">
   {% endif %}
