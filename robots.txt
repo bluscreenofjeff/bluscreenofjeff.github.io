@@ -1,2 +1,3 @@
 User-agent: *
 Sitemap: https://bluescreenofjeff.com/sitemap.xml
+Disallow: /about
