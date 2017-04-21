@@ -1,6 +1,6 @@
 ---
 layout: page
-title: bluescreenofjeff.com
+title: bluescreenofjeff.com - An information security blog
 subtitle: Infosec stuff
 featuredimage:
 description: Jeff Dimmock's information security blog. Primarily focuses on penetration testing and red teaming tradecraft and tools. 
@@ -10,12 +10,12 @@ description: Jeff Dimmock's information security blog. Primarily focuses on pene
   {% for post in paginator.posts %}
   <article class="post-preview" style="margin-top: 0;">
     <a id="post-link" href="{{ post.url | prepend: site.baseurl }}"> 
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h1 class="post-title">{{ post.title }}</h1>
 	
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h2 class="post-subtitle">
 	    {{ post.subtitle }}
-	  </h3>
+	  </h2>
 	  {% endif %}  
     </a>
 
