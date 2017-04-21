@@ -436,9 +436,9 @@ header.header-post .post-heading .post-subheading {
     left: 0;
     right: 0;
     object-fit: cover;
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-    opacity: 0.6;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.8;
     background: grey;
 }
 
