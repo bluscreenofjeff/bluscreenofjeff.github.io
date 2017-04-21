@@ -37,7 +37,7 @@ description: All posts on bluescreenofjeff.com, sorted by subject tag
 	{% assign t = tag | first %}
 	{% assign posts = tag | last %}
 
-<article id="{{t | downcase}}"><br><h2>{{ t | downcase }}</h2>
+<article id="{{t | downcase}}" style="margin-top: 0;"><br><h2>{{ t | downcase }}</h2>
 		{% for post in posts %}
 			{% if post.tags contains t %}
 			<ul>

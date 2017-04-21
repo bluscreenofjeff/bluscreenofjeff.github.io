@@ -20,7 +20,7 @@ description: All posts on bluescreenofjeff.com
 
 
 {% for post in site.posts %}
-	<article class="post-preview">
+	<article class="post-preview" style="margin-top: 0;">
     <a href="{{ post.url }}" class="post-title">
     	<h3>{{ post.title }}</h3>
     	<h4 class="post-subtitle">{{ post.subtitle }}</h4>

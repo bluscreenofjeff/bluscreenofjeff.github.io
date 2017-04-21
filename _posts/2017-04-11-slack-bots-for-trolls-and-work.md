@@ -7,7 +7,8 @@ tags:
 - cobalt strike
 - aggressor
 featuredimage: /assets/slackbot/slash-command-diagram.png
-coverimage: /assets/slackbot/slash-command-setup.png
+coverimage: /assets/slackbot/trollbot-demo.gif
+
 ---
 
 In the (belated) spirit of April Fool's Day, I wanted to slightly diverge from a strictly infosec topic and talk about something that can be used for good (work) or evil (trolling coworkers): Slack bots.

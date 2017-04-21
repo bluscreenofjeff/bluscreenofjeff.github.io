@@ -2,6 +2,7 @@
 layout: post
 title: Strengthen Your Phishing with Apache mod_rewrite and Mobile User Redirection
 summary: An introduction to strengthening your phishing campaigns with Apache's mod_rewrite module. How to redirect mobile users to a mobile-friendly malicious website, such as a cred capture, while sending full workstations to a payload designed for workstations.
+featuredimage: /assets/apache/user-agent-demo.gif
 tags: 
 - mod_rewrite
 - phishing

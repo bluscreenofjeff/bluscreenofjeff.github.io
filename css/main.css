@@ -429,26 +429,38 @@ header.header-post .post-heading .post-subheading {
     display: block;
 }
 
-/* Cover Page Text Dynamic Margin */
+.post-cover-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0.6;
+    background: grey;
+}
 
-@media all and (min-width: 50px)  {  .posts-list  { margin-top:0px;  } .site-cover-image { position:absolute;top:20px;left:0;right:0;}}
-@media all and (min-width: 320px)  {  .posts-list  { margin-top:15px;  } .site-cover-image { position:absolute;top:20px;left:0;right:0;}}
-@media all and (min-width: 400px)  {  .posts-list  { margin-top:20px;  } .site-cover-image { position:absolute;top:15px;left:0;right:0;}} 
-@media all and (min-width: 500px)  {  .posts-list  { margin-top:25px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 600px)  {  .posts-list  { margin-top:45px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 700px)  {  .posts-list  { margin-top:60px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 768px)  {  .posts-list  { margin-top:5px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 800px)  {  .posts-list  { margin-top:35px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 900px)  {  .posts-list  { margin-top:50px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1000px) {  .posts-list  { margin-top:75px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1100px) {  .posts-list  { margin-top:110px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1200px) {  .posts-list  { margin-top:140px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1300px) {  .posts-list  { margin-top:160px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1400px) {  .posts-list  { margin-top:180px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1500px) {  .posts-list  { margin-top:200px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1500px) {  .posts-list  { margin-top:210px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1600px) {  .posts-list  { margin-top:250px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 1700px) {  .posts-list  { margin-top:320px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 2000px) {  .posts-list  { margin-top:425px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 2500px) {  .posts-list  { margin-top:500px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
-@media all and (min-width: 3000px) {  .posts-list  { margin-top:625px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+/* Cover Page Text Dynamic Margin */
+@media all and (min-width: 50px)  {  article {margin-top: 130px;} .post-cover-image { height: 200px; }.posts-list  { margin-top:0px;  } .site-cover-image { position:absolute;top:20px;left:0;right:0;}}
+@media all and (min-width: 320px)  {  article {margin-top: 130px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:15px;  } .site-cover-image { position:absolute;top:20px;left:0;right:0;}}
+@media all and (min-width: 400px)  {  article {margin-top: 130px;} .post-cover-image { height: 325px; }.posts-list  { margin-top:20px;  } .site-cover-image { position:absolute;top:15px;left:0;right:0;}} 
+@media all and (min-width: 500px)  {  article {margin-top: 150px;} .post-cover-image { height: 325px; }.posts-list  { margin-top:25px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 600px)  {  article {margin-top: 150px;} .post-cover-image { height: 325px; }.posts-list  { margin-top:45px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 700px)  {  article {margin-top: 160px;} .post-cover-image { height: 325px; }.posts-list  { margin-top:60px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 768px)  {  article {margin-top: 140px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:5px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 800px)  {  article {margin-top: 140px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:35px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 900px)  {  article {margin-top: 140px;} .post-cover-image { height: 420px; }.posts-list  { margin-top:50px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1000px) {  article {margin-top: 155px;} .post-cover-image { height: 450px; }.posts-list  { margin-top:75px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1100px) {  article {margin-top: 155px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:110px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1200px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:140px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1300px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:160px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1400px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:180px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1500px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:200px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1500px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:210px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1600px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:250px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 1700px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:320px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 2000px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:425px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 2500px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:500px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}} 
+@media all and (min-width: 3000px) {  article {margin-top: 170px;} .post-cover-image { height: 400px; }.posts-list  { margin-top:625px;  } .site-cover-image { position:absolute;top:0;left:0;right:0;}

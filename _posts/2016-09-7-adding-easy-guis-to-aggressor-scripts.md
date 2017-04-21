@@ -6,6 +6,7 @@ tags:
 - cobalt strike
 - aggressor
 featuredimage: /assets/aggressor-gui/eclipse-1.png
+coverimage: /assets/aggressor-gui/demo.gif
 ---
 
 As pentesters and red teamers, we have lots of commands floating around in our head. As much as the 1337 profess to hate GUIs, they sure do make testing a lot easier. [Cobalt Strike](https://cobaltstrike.com/) provides testers a lot of power with an easy-to-use interface. [Aggressor Script](https://www.cobaltstrike.com/aggressor-script/index.html) offers a wealth of extensibility options to expand Cobalt Strike's built-in functions, but building out a custom GUI is a bit more difficult.

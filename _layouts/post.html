@@ -2,23 +2,36 @@
 layout: default
 ---
 
+<div class="post-cover-image">
+{% if page.coverimage %}
+  <img src="{{ page.coverimage }}" class="post-cover-image" />
+{% elsif page.featuredimage %}
+  <img src="{{ page.featuredimage }}" class="post-cover-image" />
+{% else %}
+  <img src="/assets/headers/bluescreenheader-no_text.jpg" class="post-cover-image" />
+{% endif %}
+</div>
+
 <header class="header-post">
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2 class="post-subheading">{{ page.subtitle }}</h2>
-        {% endif %}
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span> - 
-        <span class="post-meta" style="text-align:right;">
-          {% assign words = content | number_of_words %}
-          {% if words < 360 %}
-            1 min read
-          {% else %}
-          {{ words | divided_by:180 }} min read
+      <!-- <div style="background:#8B8B8B; padding-left: 15px; padding-right: 15px;"> -->
+      <div style="background:#2E2E2E; opacity: 0.85; padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px;">
+        <div class="post-heading" style="color: white;">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="post-subheading">{{ page.subtitle }}</h2>
           {% endif %}
-        </span>
+          <span class="post-meta" style="color:white;">Posted on {{ page.date | date: "%B %-d, %Y" }}</span> - 
+          <span class="post-meta" style="color:white; text-align:right;">
+            {% assign words = content | number_of_words %}
+            {% if words < 360 %}
+              1 min read
+            {% else %}
+            {{ words | divided_by:180 }} min read
+            {% endif %}
+          </span>
+        </div>
       </div>
      </div>
   </div>

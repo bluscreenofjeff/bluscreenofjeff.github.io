@@ -8,7 +8,7 @@ description: Jeff Dimmock's information security blog. Primarily focuses on pene
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-  <article class="post-preview">
+  <article class="post-preview" style="margin-top: 0;">
     <a id="post-link" href="{{ post.url | prepend: site.baseurl }}"> 
 	  <h2 class="post-title">{{ post.title }}</h2>
 	
