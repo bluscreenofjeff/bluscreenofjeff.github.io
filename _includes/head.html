@@ -110,12 +110,14 @@
     <meta property="article:author" content="https://twitter.com/bluscreenofjeff" />
     <meta property="article:published_time" content="{{ page.date }}" />
   {% else %}
-    <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}">
+    <meta property="og:description" content="{{ page.description | strip_html | xml_escape}}" />
   {% endif %}
 
 <!-- Twitter Card tags -->
 <meta name="twitter:creator" content="@bluscreenofjeff" />
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta name="twitter:site" content="@bluscreenofjeff" />
 
 
  {% if page.noindex %}
