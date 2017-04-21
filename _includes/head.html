@@ -2,13 +2,17 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="canonical" href=" {{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
   
-  {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
+  {% if page.summary %}
+    <meta name="description" content="{{ page.summary }}">
+  {% elsif page.title == 'bluescreenofjeff.com' %}
+    <meta name="description" content="{{ site.description }}">
+  {% else %}
+    <meta name="description" content="{{ page.content | truncate: 160 | strip_html | xml_escape}}">
   {% endif %}
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
