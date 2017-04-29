@@ -6,7 +6,7 @@ tags:
 - slack
 - cobalt strike
 - aggressor
-featuredimage: /assets/slackbot/slash-command-diagram.png
+image: /assets/slackbot/slash-command-diagram.png
 coverimage: /assets/slackbot/trollbot-demo.gif
 
 ---

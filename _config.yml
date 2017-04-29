@@ -52,6 +52,7 @@ author:
   name: Jeff Dimmock
   github: bluscreenofjeff
   twitter: bluscreenofjeff
+
 # Select which links to show in the footer
 footer-links-active:
   rss: true
@@ -65,6 +66,26 @@ footer-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "bluescreenofjeff.com"  # eg. "deanattali.com/beautiful-jekyll"
+
+# --- SEO --- #
+
+twitter:
+  username: bluscreenofjeff
+
+logo: /assets/bsoj.png
+
+social:
+  name: Jeff Dimmock
+  links:
+      - https://twitter.com/bluscreenofjeff
+      - https://github.com/bluscreenofjeff
+      - https://keybase.io/bluescreenofjeff
+      - https://www.linkedin.com/in/jeffdimmock/
+
+image:
+  path: /assets/bsoj.png
+  height: 300
+  width: 300
 
 # --- Misc --- #
 
@@ -90,6 +111,7 @@ paginate: 5
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -158,10 +180,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-
-
-
-
 
 
 # Beautiful Jekyll / Dean Attali

@@ -208,6 +208,7 @@ DEPENDENCIES
   jekyll-archives
   jekyll-paginate
   jekyll-redirect-from
+  jekyll-seo-tag
   jekyll-sitemap
   rouge
   therubyracer

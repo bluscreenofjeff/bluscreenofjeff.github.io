@@ -5,7 +5,7 @@ summary: How to create easy GUIs for Aggressor scripts using Eclipse and Sleep.
 tags: 
 - cobalt strike
 - aggressor
-featuredimage: /assets/aggressor-gui/eclipse-1.png
+image: /assets/aggressor-gui/eclipse-1.png
 coverimage: /assets/aggressor-gui/demo.gif
 ---
 

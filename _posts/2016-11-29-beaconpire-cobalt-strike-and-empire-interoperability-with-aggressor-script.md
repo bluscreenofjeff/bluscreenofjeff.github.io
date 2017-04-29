@@ -6,7 +6,7 @@ tags:
 - cobalt strike
 - aggressor 
 - empire
-featuredimage: /assets/beaconpire/beacon_to_empire_demo.gif
+image: /assets/beaconpire/beacon_to_empire_demo.gif
 ---
 
 

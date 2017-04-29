@@ -2,7 +2,7 @@
 layout: post
 title: Semi-Persistence
 summary: How to get some semi-persistence using VBScript
-featuredimage: /assets/semipersistence/semipersistence2.png
+image: /assets/semipersistence/semipersistence2.png
 tags:
 - payloads
 ---

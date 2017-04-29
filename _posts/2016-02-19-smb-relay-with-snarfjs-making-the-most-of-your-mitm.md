@@ -3,7 +3,7 @@ layout: post
 title: SMB Relay with Snarf
 subtitle: Making the Most of Your MitM
 summary: Leverage Snarf to maximize the value gained from your SMB Relaying, especially without Local Admin
-featuredimage: /assets/snarf/snarf-demo.gif
+image: /assets/snarf/snarf-demo.gif
 tags:
 - smb relay
 ---

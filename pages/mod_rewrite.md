@@ -2,7 +2,7 @@
 layout: default
 title: Apache mod_rewrite
 permalink: /topics/mod_rewrite
-featuredimage:
+image:
 description: Apache mod_rewrite provides a number of methods to strengthen your phishing and increase the resilience of your testing infrastructure. mod_rewrite has the ability to perform conditional redirection based on request attributes, such as URI, user agent, query string, operating system, and IP. Apache mod_rewrite uses htaccess files to configure rulesets for how Apache should handle each incoming request. Using these rules, you could, for instance, redirect requests to your server with the default wget user agent to a legitimate page on your target's website. Many of the techniques discussed on this blog can be combined to increase their effect.
 ---
 

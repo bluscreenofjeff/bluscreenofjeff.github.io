@@ -5,7 +5,7 @@ summary: How to create Malleable C2 profiles to shape your Cobalt Strike C2 traf
 tags: 
 - cobalt strike
 - malleable c2
-featuredimage: /assets/malleable_c2/wireshark_2.png
+image: /assets/malleable_c2/wireshark_2.png
 ---
 
 It's not fun to get caught on an assessment because your target has your toolset signatured. It's even less fun if that signature is easily bypassed. Cobalt Strike's Malleable C2 is a method of avoiding that problem when it comes to command and control (C2) traffic. Malleable C2 provides operators with a method to mold Cobalt Strike command and control traffic to their will. For instance, if you determine your target organization allows employees to use Pandora, you could create a [profile](https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/normal/pandora.profile) to make Cobalt Strike's C2 traffic look like Pandora on the wire. Alternatively, if a client wants to test detection capabilities, you could make your traffic look like a well-known malware toolkit like [Zeus](https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/crimeware/zeus.profile).

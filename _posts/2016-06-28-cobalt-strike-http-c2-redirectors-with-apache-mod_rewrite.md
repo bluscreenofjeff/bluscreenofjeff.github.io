@@ -5,7 +5,7 @@ summary: How to set up a Command and Control redirector to only allow Cobalt Str
 tags: 
 - mod_rewrite
 - cobalt strike
-featuredimage: /assets/apache/cobalt-strike-http-c2-demo.gif
+image: /assets/apache/cobalt-strike-http-c2-demo.gif
 ---
 
 Imagine you are performing a Red Team engagement. So far it's been very hard, fighting tooth and nail to get each step closer to totally owning their network. You finally get internal network access and things are stable. Everything looks good on your end, but on the Blue side of things IT is taking notice of traffic flowing to an unknown domain. A curious IT worker opens their browser and navigates to the site. 404 error. Suspicion++. Five minutes later your Beacons become unresponsive. You're blocked. Now you have to spin up some new infrastructure and get in again.

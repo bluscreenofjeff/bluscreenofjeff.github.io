@@ -2,7 +2,7 @@
 layout: default
 title: All Posts
 permalink: /posts
-featuredimage:
+image:
 description: All posts on bluescreenofjeff.com
 ---
 

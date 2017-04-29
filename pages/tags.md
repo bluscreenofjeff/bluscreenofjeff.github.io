@@ -2,7 +2,7 @@
 layout: default
 title: Posts Sorted by Tag
 permalink: /tags
-featuredimage:
+image:
 description: All posts on bluescreenofjeff.com, sorted by subject tag
 ---
 <style>

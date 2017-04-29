@@ -2,7 +2,7 @@
 layout: post
 title: Operating System Based Redirection with Apache mod_rewrite
 summary: Redirect your phishing victims to different payloads or sites based on their operating system.
-featuredimage: /assets/apache/os-detection-demo.gif
+image: /assets/apache/os-detection-demo.gif
 tags: 
 - mod_rewrite
 - phishing
