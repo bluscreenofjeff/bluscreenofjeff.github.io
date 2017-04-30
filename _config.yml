@@ -112,7 +112,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-readme-index
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
