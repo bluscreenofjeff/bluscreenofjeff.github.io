@@ -6,6 +6,7 @@ image: /assets/apache/invalid-uri-demo.gif
 tags: 
 - mod_rewrite
 - phishing
+commentIssueId: 8
 ---
 
 There have been times when a curious phish recipient or a zealous help desk staff has loaded the phishing link in their browser and decided to take a peek at a higher directory or the root domain. Of course, most times there isn't much else site to see. In those cases, the chances of being reported to IR went up significantly, sometimes leading to a phishing campaign being blocked. This is where invalid URI redirection comes in handy.

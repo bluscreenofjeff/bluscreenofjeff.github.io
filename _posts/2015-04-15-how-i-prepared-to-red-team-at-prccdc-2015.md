@@ -5,6 +5,7 @@ summary: A bit about how I prepared for the Pacific Rim CCDC 2015 competition
 image: /assets/prccdc2015/prccdc2015-defacement.gif
 tags:
 - ccdc
+commentIssueId: 4
 ---
 
 I had the opportunity to take part in the Pacific Rim CCDC this past weekend and it was a BLAST! It was my first CCDC, so I really didn't know what to expect. I did know that the last thing I would want to be doing is installing and configuring tools during test time.

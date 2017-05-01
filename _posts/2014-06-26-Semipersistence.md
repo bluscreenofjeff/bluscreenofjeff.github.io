@@ -5,6 +5,7 @@ summary: How to get some semi-persistence using VBScript
 image: /assets/semipersistence/semipersistence2.png
 tags:
 - payloads
+commentIssueId: 3
 ---
      
 

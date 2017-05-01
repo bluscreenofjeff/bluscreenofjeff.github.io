@@ -5,6 +5,7 @@ summary: Tricks to slow down and impede incident responders investigating your p
 tags: 
 - mod_rewrite
 - phishing
+commentIssueId: 10
 ---
 
 Any phishing campaign involving an active incident response element usually requires some evasive steps to prolong its longevity. This often includes being stealthier, performing anti-forensics actions, or avoiding certain tradecraft altogether. Phishing is no different, and is often the most 'vulnerable' part of a campaign from an active IR perspective. Using a distributed infrastructure built with independent components helps reduce the risk of the overall architecture being blocked, but individual phishing campaigns are likely to be caught and blocked throughout the duration. The longer we can stretch out the usability of each of those campaigns, the better our chances of gaining access.

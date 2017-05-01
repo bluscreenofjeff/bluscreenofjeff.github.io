@@ -65,7 +65,7 @@ layout: default
 
 {% assign RELATED_POSTS_THRESHOLD = 3 %}
 <div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><br>
+  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1"><br>
     <span class="post-meta"><b>Recommended Posts:</b> <span> 
   {% assign related_post_count = 0 %}
   {% for post in site.related_posts %}
@@ -108,6 +108,14 @@ layout: default
   </div>
 </div><br>
 
+{% if page.commentIssueId %}
+<div class="row disqus-comments">
+  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+    {% include comments.html %}
+  </div>
+</div>
+{% endif %}
+
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <ul class="pager blog-pager">
@@ -124,11 +132,3 @@ layout: default
     </ul>
   </div>
 </div>
-
-{% if page.comments %}
-<div class="row disqus-comments">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    {% include disqus.html %}
-  </div>
-</div>
-{% endif %}

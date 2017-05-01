@@ -6,6 +6,7 @@ summary: Leverage Snarf to maximize the value gained from your SMB Relaying, esp
 image: /assets/snarf/snarf-demo.gif
 tags:
 - smb relay
+commentIssueId: 6
 ---
 
 SMB Relay is a well-known attack that involves intercepting SMB traffic and relaying the NTLM authentication handshakes to a target host. This post assumes you already understand the basics of SMB Relay (if not I *highly* suggest you check out Mark Baggett's SANS post [SMB Relay Demystified and NTLMv2 Pwnage with Python](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)). SMB Relay has hands down been the most frequent foothold I've found on internal network pentests; however, sometimes the users in my broadcast domain don't seem to have Local Administrator rights on any of the targeted hosts or AV is making the process take a lot longer. This is where [Snarf](https://github.com/purpleteam/snarf) comes to the rescue.

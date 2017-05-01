@@ -5,6 +5,7 @@ summary: How to create communication profiles to shape Empire C2 traffic.
 tags:
 - empire
 image: /assets/empire-communication-profiles/default-profile-packet-capture.png
+commentIssueId: 20
 ---
 
 In a [recent post]({{site.baseurl}}/2017-01-24-how-to-write-malleable-c2-profiles-for-cobalt-strike/), I detailed how to make a Malleable C2 profile for Cobalt Strike. Malleable C2 profiles provide an operator with the ability to shape how defenders will see, and potentially categorize, C2 traffic on the wire. Communication Profiles in Empire provide similar functionality. This increases our chances of evading detection, allows us to emulate specific adversaries, or masquerade as widely-used applications on our target's network.

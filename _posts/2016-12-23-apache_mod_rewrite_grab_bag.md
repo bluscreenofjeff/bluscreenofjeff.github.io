@@ -6,6 +6,7 @@ tags:
 - mod_rewrite
 - phishing
 image: /assets/apache/payload-file-extension-obfuscation.gif
+commentIssueId: 18
 ---
 
 Apache mod_rewrite provides conditional redirection and obfuscation to a red teamer's infrastructure. I've previously written about mod_rewrite in [a few posts]({{site.baseurl}}/topics/mod_rewrite). In this post, I will cover a few quick tricks you can use in conjunction with techniques from my earlier posts while phishing or red teaming.

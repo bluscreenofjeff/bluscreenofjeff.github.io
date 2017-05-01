@@ -6,6 +6,7 @@ image: /assets/apache/user-agent-demo.gif
 tags: 
 - mod_rewrite
 - phishing
+commentIssueId: 7
 ---
 
 Often times a corporate internal network is heavily locked down. Workstations are restricted with limited internet access. These controls are often less strict on mobile devices (or sometimes not present), especially with BYOD being implemented more and more. While phishing, Apache access logs often show mobile devices accessing the malicious page, yet no sessions are established.

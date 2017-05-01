@@ -8,7 +8,7 @@ tags:
 - aggressor
 image: /assets/slackbot/slash-command-diagram.png
 coverimage: /assets/slackbot/trollbot-demo.gif
-
+commentIssueId: 21
 ---
 
 In the (belated) spirit of April Fool's Day, I wanted to slightly diverge from a strictly infosec topic and talk about something that can be used for good (work) or evil (trolling coworkers): Slack bots.

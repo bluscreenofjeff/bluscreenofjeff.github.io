@@ -7,6 +7,7 @@ tags:
 - aggressor 
 - empire
 image: /assets/beaconpire/beacon_to_empire_demo.gif
+commentIssueId: 17
 ---
 
 

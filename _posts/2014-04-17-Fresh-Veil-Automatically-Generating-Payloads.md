@@ -7,6 +7,7 @@ image: /assets/freshveil/freshveil1.png
 tags:
 - veil
 - payloads
+commentIssueId: 2
 ---
 
 Veil is awesome - it makes payload generation easy and supports a wide variety of payloads with new ones being dropped pretty often.
