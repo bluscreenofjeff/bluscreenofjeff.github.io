@@ -7,7 +7,8 @@ tags:
 - cobalt strike
 - aggressor
 - kerberos
-image: /assets/prccdc2017/silver-tickets-demo.gif
+image: /assets/prccdc2017/red-team-infrastructure.png
+coverimage: /assets/prccdc2017/silver-tickets-demo.gif
 commentIssueId: 22
 ---
 
