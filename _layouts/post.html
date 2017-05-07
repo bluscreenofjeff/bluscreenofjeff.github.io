@@ -58,11 +58,11 @@ layout: default
 <div class="row">
   <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 share-buttons">
     <span class="post-meta" style="padding-right:15px;">Share: <span> 
-    <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter.username }}&related={{ site.twitter.username }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&p[title]={{ page.title }}"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.url }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"><i class="fa fa-reddit" aria-hidden="true"></i>
+    <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter.username }}&related={{ site.twitter.username }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&p[title]={{ page.title }}" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.content | truncatewords: 50 | strip_html | xml_escape}}&source={{ site.url }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i>
 </a>
 
   </div>
