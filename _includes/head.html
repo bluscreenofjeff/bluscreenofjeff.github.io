@@ -56,41 +56,17 @@
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
 </noscript>
-
-
 <script>
-    (function() {
-        var font = document.createElement('link'); 
-        var font2 = document.createElement('link');
-        var font3 = document.createElement('link');
-        var font4 = document.createElement('link');
-        var font5 = document.createElement('link'); 
-        font.type = 'text/css'; 
-        font2.type = 'text/css';
-        font3.type = 'text/css';
-        font4.type = 'text/css';
-        font5.type = 'text/css'; 
-        font.rel = 'stylesheet';
-        font2.rel = 'stylesheet';
-        font3.rel = 'stylesheet';
-        font4.rel = 'stylesheet';
-        font5.rel = 'stylesheet';
-        font.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
-        font2.href = '/css/bootstrap.min.css';
-        font3.href = '/css/main.css';
-        font4.href = '//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic';
-        font5.href = '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800';
-        var s = document.getElementsByTagName('link')[0]; 
-        var t = document.getElementsByTagName('link')[0];
-        var u = document.getElementsByTagName('link')[0];
-        var v = document.getElementsByTagName('link')[0];
-        var w = document.getElementsByTagName('link')[0];
-        s.parentNode.insertBefore(font, s);
-        t.parentNode.insertBefore(font2, t);
-        u.parentNode.insertBefore(font3, u);
-        v.parentNode.insertBefore(font4, v);
-        w.parentNode.insertBefore(font5, w);
-      })();
+  var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+  else window.addEventListener('load', loadDeferredStyles);
 </script>
 
 
