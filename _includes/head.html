@@ -45,28 +45,19 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  <!-- TODO hardcode the required JS because on 2016-02-01 GitHub pages migrated to jekyll 3 and broke this template -->
 
-  <!-- end TODO -->
-
-<noscript id="deferred-styles">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="/css/main.css" />
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-
-       {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      <link rel="stylesheet" href="{{ css }}" />
-    {% endfor %}
-  {% endif %}  
-  
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
+
+<noscript id="deferred-styles">
+       {% if layout.common-ext-css %}
+    {% for css in layout.common-ext-css %}
+      <link rel="stylesheet" href="{{ css }}" />
+    {% endfor %}
+  {% endif %}  
   
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
@@ -91,7 +82,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
     {% endfor %}
   {% endif %}
-  
+
 </noscript>
 <script>
   var loadDeferredStyles = function() {
