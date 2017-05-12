@@ -2,10 +2,10 @@
     <browserconfig>
       <msapplication>
         <tile>
-          <square70x70logo src="{{ site.url }}/assets/favicons/win8/smalltile.png"/>
-          <square150x150logo src="{{ site.url }}/assets/favicons/win8/mediumtile.png"/>
-          <wide310x150logo src="{{ site.url }}/assets/favicons/win8/widetile.png"/>
-          <square310x310logo src="{{ site.url }}/assets/favicons/win8/largetile.png"/>
+          <square70x70logo src="https://bluescreenofjeff.com/assets/favicons/win8/smalltile.png"/>
+          <square150x150logo src="https://bluescreenofjeff.com/assets/favicons/win8/mediumtile.png"/>
+          <wide310x150logo src="https://bluescreenofjeff.com/assets/favicons/win8/widetile.png"/>
+          <square310x310logo src="https://bluescreenofjeff.com/assets/favicons/win8/largetile.png"/>
           <TileColor>#0013a2</TileColor>
         </tile>
       </msapplication>
