@@ -34,7 +34,6 @@
   {% endif %}
   </title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/assets/favicons/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/favicon-apple-touch-57.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/favicons/favicon-apple-touch-114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/favicons/favicon-apple-touch-72.png">
@@ -54,9 +53,11 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.url }}/feed.xml" />
 
-  <meta name="application-name" content="Name">
-  <meta name="msapplication-tooltip" content="Tooltip">
+  <meta name="application-name" content="bluescreenofjeff.com">
+  <meta name="msapplication-tooltip" content="Jeff Dimmock's information security blog">
   <meta name="msapplication-config" content="{{ site.url }}/assets/favicons/win8/ieconfig.xml">
+
+  <link rel="manifest" href="{{ site.url }}/assets/favicons/chrome/manifest.json">
 
 
   {% if layout.common-css %}
