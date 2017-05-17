@@ -10,9 +10,9 @@ layout: null
     <image>
       <title>{{ site.title | xml_escape }}</title>
       <link>{{ site.url }}</link>
-      <url>{{ site.url }}/assets/favicons/favicon-apple-touch-144.png</url>
-      <height>144</height>
-      <width>144</width>
+      <url>{{ site.url }}/favicon.ico</url>
+      <height>64</height>
+      <width>64</width>
     </image>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
