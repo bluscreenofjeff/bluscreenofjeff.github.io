@@ -25,10 +25,9 @@
   <title>
   {% if paginator %} 
     {% if paginator.page < 2 %}
-      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+      {{ site.title }}
     {% else %}
-      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Page {{ paginator.page }}
-    {% endif %}
+      {{ site.title }}{% endif %} - Page {{ paginator.page }}
   {% else %}
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
   {% endif %}
