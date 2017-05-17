@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: bluescreenofjeff.com
+title: bluescreenofjeff.com - Jeff Dimmock's blog about penetration testing and red teaming
 
 # Short description of your site
 description: An information security blog by penetration tester and red teamer Jeff Dimmock.
