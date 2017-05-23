@@ -18,7 +18,7 @@ The setup roughly looked like this:
 
 You may encounter a similar situation on production networks when trying to compromise sensitive hosts in segmented portions of the network. This post covers how to pass Golden and Silver Tickets through an SSH tunnel. As an example in this post, we'll be trying to compromise the Windows host *WIN-RMJBTDB7QTF* through the Linux host located at 10.0.10.81.
 
-Big thanks to Benjamin Delpy ([@gentilkiwi](https://twitter.com/gentilkiwi)), Chris Gates ([@carnal0wnage](https://twitter.com/carnal0wnage)), and MWR Labs ([@mwrlabs](https://twitter.com/mwrlabs)) for writing these resources:
+Big thanks to Alberto Solino ([@agsolino](https://twitter.com/agsolino)) and everyone involved in Impacket's development and Benjamin Delpy ([@gentilkiwi](https://twitter.com/gentilkiwi)), Chris Gates ([@carnal0wnage](https://twitter.com/carnal0wnage)), and MWR Labs ([@mwrlabs](https://twitter.com/mwrlabs)) for writing these resources:
 * [Tweet about using Golden Tickets on Linux](https://twitter.com/gentilkiwi/status/561901226682744832) - Benjamin Delpy
 * [Ways to Load Kerberos Tickets](http://carnal0wnage.attackresearch.com/2015/09/ways-to-load-kerberos-tickets.html) - Chris Gates
 * [Digging into MS14-068 Exploitation and Defence](https://labs.mwrinfosecurity.com/blog/digging-into-ms14-068-exploitation-and-defence/) - MWR Labs
