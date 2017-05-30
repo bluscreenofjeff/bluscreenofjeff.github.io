@@ -17,5 +17,5 @@ description: Talks given by bluescreenofjeff
 The sky is falling! Nation state 0days are up for auction, blue teams are hacking back, infrastructure is being pwned. Pandemonium! It’s time to hunker down and strengthen your red team infrastructure. In this talk we’ll discuss tactics for Red Teams to reduce the risk of getting your infrastructure shutdown. We cover traffic bending with mod_rewrite, C2 redirection, and counter-recon techniques. Don’t worry Blues, we provide detection and mitigation methods to protect your bunker-- or organization.
 
 * *[BSides NoVA 2017 Slides](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)*
-* *[Hack Miami 5 Slides](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-hackmiami)
+* *[Hack Miami 5 Slides](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-hackmiami)*
 * *Accompanying [Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki) available online.*
