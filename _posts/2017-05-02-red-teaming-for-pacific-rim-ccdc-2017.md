@@ -14,7 +14,7 @@ commentIssueId: 22
 
 A few weeks, ago I had the pleasure of participating on the Red Team for Pacific Rim CCDC. This is my third year doing the competition, and I feel like I have more fun each year. This year, I was on the Windows Meta Team and a Red Cell Team with Lee Christensen ([@tifkin_](https://twitter.com/tifkin_)) and Andy Robbins ([@_wald0](https://twitter.com/_wald0)).
 
-I've previously written two posts about the competition, in [2015]({{site.baseurl}}/2015-04-15-how-i-prepared-to-red-team-at-prccdc-2015/) and [2016](2016-05-24-pacific-rim-ccdc_2016/), and don't want to rehash the same points I've already covered. In this post, I will focus on the Windows Meta Team infrastructure design, Cobalt Strike Aggressor scripts, and provide some tips for the Blues.
+I've previously written two posts about the competition, in [2015]({{site.baseurl}}/2015-04-15-how-i-prepared-to-red-team-at-prccdc-2015/) and [2016]({{site.baseurl}}/2016-05-24-pacific-rim-ccdc_2016/), and don't want to rehash the same points I've already covered. In this post, I will focus on the Windows Meta Team infrastructure design, Cobalt Strike Aggressor scripts, and provide some tips for the Blues.
 
 # Infrastructure Design
 
