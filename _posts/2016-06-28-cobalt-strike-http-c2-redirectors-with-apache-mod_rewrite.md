@@ -5,6 +5,7 @@ summary: How to set up a Command and Control redirector to only allow Cobalt Str
 tags: 
 - mod_rewrite
 - cobalt strike
+- red team infrastructure
 image: /assets/apache/cobalt-strike-http-c2-demo.gif
 commentIssueId: 13
 ---

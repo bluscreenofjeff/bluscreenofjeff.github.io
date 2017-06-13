@@ -5,6 +5,7 @@ summary: Use Apache's RewriteMap to perform advanced HTTP request redirection, s
 tags: 
 - mod_rewrite
 - phishing
+- red team infrastructure
 image: /assets/apache/expire-demo.gif
 commentIssueId: 11
 ---

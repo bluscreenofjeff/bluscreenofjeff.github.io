@@ -5,6 +5,7 @@ summary: Using Apache mod_rewrite to hot-swap payloads, obfuscate payload file e
 tags: 
 - mod_rewrite
 - phishing
+- red team infrastructure
 image: /assets/apache/payload-file-extension-obfuscation.gif
 commentIssueId: 18
 ---

@@ -5,6 +5,7 @@ summary: Tricks to slow down and impede incident responders investigating your p
 tags: 
 - mod_rewrite
 - phishing
+- red team infrastructure
 commentIssueId: 10
 ---
 

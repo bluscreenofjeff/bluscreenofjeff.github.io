@@ -4,6 +4,7 @@ title: How to Make Communication Profiles for Empire
 summary: How to create communication profiles to shape Empire C2 traffic.
 tags:
 - empire
+- red team infrastructure
 image: /assets/empire-communication-profiles/default-profile-packet-capture.png
 commentIssueId: 20
 ---

@@ -6,6 +6,7 @@ image: /assets/apache/os-detection-demo.gif
 tags: 
 - mod_rewrite
 - phishing
+- red team infrastructure
 commentIssueId: 9
 ---
 

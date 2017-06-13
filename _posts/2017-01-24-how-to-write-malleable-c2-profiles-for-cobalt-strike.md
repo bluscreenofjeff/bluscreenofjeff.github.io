@@ -5,6 +5,7 @@ summary: How to create Malleable C2 profiles to shape your Cobalt Strike C2 traf
 tags: 
 - cobalt strike
 - malleable c2
+- red team infrastructure
 image: /assets/malleable_c2/wireshark_2.png
 commentIssueId: 19
 ---
