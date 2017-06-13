@@ -69,9 +69,9 @@ RewriteRule <span style="color: gold">^.*$</span> <span style="color: orange">ht
 Here's a line-by-line breakdown of that ruleset:
 
 <div style="background-color:rgb(39,40,34);color:rgb(248,248,242);font-size:.85em;overflow-x:scroll;white-space: nowrap;padding:6px;">
-Enable the rewrite engine
+Enable the rewrite engine<br>
 <span style="color: dodgerblue">If the request’s URI</span> <span style="color: mediumseagreen">starts with ‘payload’</span> <span style="color: mediumpurple"> with an optional trailing slash at the end of the URI,</span><br>
-<span style="color: gold">rewrite the entire request</span> <span style="color: orange">to a random value pulled from the RewriteMap file linked to "payloads" with the key "windows"</span> <span style="color: tomato">This is a temporary redirect and the last rule that should be evaluated/applied to the request.</span>
+<span style="color: gold">rewrite the entire request</span> <span style="color: orange">to a random value pulled from the RewriteMap file linked to "payloads" with the key "windows"</span> <span style="color: tomato">This is a temporary redirect and the last rule that should be evaluated/applied to the request.</span><br>
 <span style="color: dodgerblue">If the request’s URI</span> <span style="color: mediumseagreen">starts with ‘payload’ and ends with the file extension exe, lnk, or hta,</span><br>
 <span style="color: gold">rewrite the entire request</span> <span style="color: orange">to serve the </span><span style="color: dodgerblue"> request URI </span><span style="color: orange"> from IP 192.168.188.134 (the payload server IP), </span><span style="color: tomato">and keep the user's address bar the same (obscure the teamserver's IP).</span>
 </div>
