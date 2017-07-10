@@ -17,9 +17,15 @@
       <a class="navbar-brand" href="{{ site.url }}">bluescreenofjeff.com</a>
 
     </div>
+    <style>
+    .so-logo:hover {
+      opacity:.3;
+    }
+    </style>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://specterops.io/" class="so-logo"><img src="{{ site.baseurl }}/assets/specterops_logo2.png" height=20 /></a></li>
 	    {% for link in site.navbar-links %}
 	      {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
 	      {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
@@ -43,5 +49,5 @@
       </ul>
     </div>
   </div>
-
 </nav>  
+
