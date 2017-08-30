@@ -113,26 +113,26 @@ python malleable-c2-randomizer.py [-h] -profile PROFILE
 ## Basic Options
 
 ```plaintext
-Parameter		Description 
--profile, -p 	Path to the Malleable C2 template to randomize (REQUIRED)
--count, -c 		The number of randomized profiles to create {Default = 1}
--cobalt, -d 	The directory where Cobalt Strike is located (for c2lint) {Default = current directory}
--output, -o 	Output base name {Default = template basename and random string}
--notest, -n 	Skip testing with c2lint (Flag)
+Parameter       Description
+-profile, -p    Path to the Malleable C2 template to randomize (REQUIRED)
+-count, -c      The number of randomized profiles to create {Default = 1}
+-cobalt, -d     The directory where Cobalt Strike is located (for c2lint) {Default = current directory}
+-output, -o     Output base name {Default = template basename and random string}
+-notest, -n     Skip testing with c2lint (Flag)
 ```
 
 ## Custom Wordlists
 If no wordlist is provided, a built-in list will be used by default. For more information about creating these lists, see [below](#building-wordlists) or the [Sample Wordlists](https://github.com/bluscreenofjeff/Malleable-C2-Randomizer/tree/master/Sample%20Lists) folder in the script repo.
 
 ```plaintext
-Parameter				Description
--charset				File with a custom characterset to use with the %%customchar%% variable
--wordlist				File with a list of custom words to use with the %%word%% variable
--useragent				File with a list of useragents
--spawnto				File with a list of custom spawnto processes
--pipename				File with a list of custome pipenames
--pipename_stager		File with a list of custom pipename_stagers
--dns_stager_subhost		File with a list of custom dns_stager_subhosts
+Parameter               Description
+-charset                File with a custom characterset to use with the %%customchar%% variable
+-wordlist               File with a list of custom words to use with the %%word%% variable
+-useragent              File with a list of useragents
+-spawnto                File with a list of custom spawnto processes
+-pipename               File with a list of custome pipenames
+-pipename_stager        File with a list of custom pipename_stagers
+-dns_stager_subhost     File with a list of custom dns_stager_subhosts
 ```
 
 
