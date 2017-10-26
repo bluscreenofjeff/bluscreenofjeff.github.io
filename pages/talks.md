@@ -20,9 +20,11 @@ The sky is falling! Nation state 0days are up for auction, blue teams are hackin
 * *[Hack Miami 5 Slides](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-hackmiami)*
 * *Accompanying [Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki) available online.*
 
+<br>
+
 ## Building a Better Moat: Designing an Effective Covert Red Team Attack Infrastructure
 *Presented at [ArcticCon 2017](https://www.arcticcon.com/)*
 
 Red team assessments are distinct from penetration tests in many ways, typically in assessment duration, tradecraft sophistication, and level of active incident response. If the assessment is so different, why would you want to use the same attack infrastructure you’d use on a penetration test? This talk will cover how to design and leverage an effective covert attack infrastructure. I’ll cover practical design considerations, demonstrate covert attack infrastructure concepts, and provide sample attack infrastructures. This talk will not cover the nitty-gritty HOW aspect of infrastructure deployment, focusing instead on the WHAT and WHY aspects.
 
-* *[Slides](https://speakerdeck.com/bluscreenofjeff/building-a-better-moat-designing-an-effective-covert-red-team-attack-infrastructure)
+* *[Slides](https://speakerdeck.com/bluscreenofjeff/building-a-better-moat-designing-an-effective-covert-red-team-attack-infrastructure)*
