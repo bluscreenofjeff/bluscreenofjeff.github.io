@@ -45,6 +45,7 @@ Make sure to configure your Cobalt Strike listeners and payloads to call out to 
 
 To set up Apache to use mod_rewrite, follow the first-time setup steps outlined in my [previous mod_rewrite post](https://bluescreenofjeff.com/2016-03-22-strengthen-your-phishing-with-apache-mod_rewrite-and-mobile-user-redirection/). 
 
+*Update: [e0x70i](https://github.com/e0x70i) pointed out in the comments below that if your Cobalt Strike Malleable C2 profile contains an Accept-Encoding header for gzip, your Apache install may compress that traffic by default and cause your Beacon to be unresponsive or function incorrectly. To overcome this, disable mod_deflate (via `a2dismod deflate` and add the No Encode (`[NE]`) flag to your rewrite rules. (Thank you, e0x70i!)*
 
 The way we configure our htaccess rules will depend on whether we need to support staged Beacons, such as [Scripted Web Delivery](https://www.cobaltstrike.com/help-scripted-web-delivery), or not. 
 
