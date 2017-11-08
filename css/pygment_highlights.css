@@ -1,4 +1,4 @@
-.highlight  { background: #272822; color: #f8f8f2; overflow: auto; word-wrap: normal; white-space: pre; word-break: normal;  }
+.highlight  { background: #272822; color: #f8f8f2; word-wrap: normal; white-space: pre; word-break: normal;  }
 .highlight pre { font-size: 16px;}
 .highlight code {overflow: auto; word-wrap: normal; white-space: pre; word-break: normal; }
 .highlight .hll { background-color: #49483e }
