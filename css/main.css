@@ -662,6 +662,7 @@ sharebutton .fa-reddit {
 
 .comment .commentbody pre code {
   border: 0px solid #ddd;
+  color: #272822;
 }
 
 .comment .commentbody code {
