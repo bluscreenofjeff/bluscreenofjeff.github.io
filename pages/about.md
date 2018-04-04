@@ -17,11 +17,11 @@ description: I'm a pentester and red teamer. In my free time, I spin up scripts,
 	<div class="col-sm-12 col-md-8" style="padding:10px;">
 		<p>I’m Jeff Dimmock.</p>
 		 
-		<p>I am the Adversary Simulation Lead at <a href="https://specterops.io">SpecterOps</a> where I regularly plan and execute red team assessments and penetration tests against Fortune 100 companies. My interests include social engineering, offensive tradecraft development, and technical writing. In my free time, I try to pay forward all the help and guidance I've received throughout my career by publishing research and scripts to this blog.</p>
+		<p>I am the Adversary Simulation Lead at <a href="https://specterops.io">SpecterOps</a>, where I regularly plan and execute red team assessments and penetration tests against Fortune 100 companies. My interests include social engineering, offensive tradecraft development, and technical writing. In my free time, I try to pay forward all the help and guidance I've received throughout my career by publishing research and scripts to this blog.</p>
 		 
 		<p>I previously worked for Veris Group's Adaptive Threat Division (ATD), where I performed penetration tests and red team assessments against large private companies and government agencies. I got my start in information security at TrustCC, security boutique firm that focused on providing offensive security assessments and audit services to financial institutions.</p>
 		 
-		<p>I earned a Master's Degree in Information Security Assurance from Western Governors University and maintain multiple security certifications. I've spoken at BSides NoVA and Hack Miami.</p>
+		<p>I earned a Master's Degree in Information Security Assurance from Western Governors University and maintain multiple security certifications. I've spoken at BSides NoVA, Hack Miami, and ArcticCon.</p>
 
 	</div>
 	 <div class="col-md-4">
