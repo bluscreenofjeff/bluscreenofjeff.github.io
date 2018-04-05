@@ -131,6 +131,8 @@ In this example, we'll be authenticating to the target host over SMB, so we will
 
 At the time of writing, `ticketer.py` doesn't support Silver Ticket generation. Instead, we'll use Mimikatz on our Windows host to create a Silver Ticket *.kirbi* file and use Kekeo to convert the ticket to a ccache file.
 
+> Update April 4, 2018: `ticketer.py` now supports Silver Ticket generation.
+
 Generate the Silver Ticket with Mimikatz's [Kerberos module](https://github.com/gentilkiwi/mimikatz/wiki/module-~-kerberos) using the following syntax:
 
 ```bash
