@@ -247,6 +247,8 @@ The above ruleset was taken and slightly modified from AskApache.com from [here]
 ## Summary
 Redirectors are a critical component in covert attack infrastructure. They are used to obfuscate backend infrastructure and can be used to confuse or disorient incident responders who are investigating your setup. Redirector traffic should blend into the expected traffic on a network. Since SSL/TLS adoption is rapidly rising, you will likely run into instances when your redirectors will need to run SSL/TLS with valid certificates. This post detailed how to set that up and some powerful things you can do with SSL-enabled redirectors, such as using multiple domains with an HTTPS Cobalt Strike listener.
 
+*Update: [e0x70i](https://github.com/e0x70i) pointed out in the comments of my [Cobalt Strike HTTP C2 Redirectors with Apache mod_rewrite]({{site.baseurl}}/2016-06-28-cobalt-strike-http-c2-redirectors-with-apache-mod_rewrite/) post, if your Cobalt Strike Malleable C2 profile contains an Accept-Encoding header for gzip, your Apache install may compress that traffic by default and cause your Beacon to be unresponsive or function incorrectly. To overcome this, disable mod_deflate (via `a2dismod deflate` and add the No Encode (`[NE]`) flag to your rewrite rules. (Thank you, e0x70i!)*
+
 # Resources
 * [Automating Apache mod_rewrite and Cobalt Strike Malleable C2 for Intelligent Redirection](http://threatexpress.com/2018/02/automating-cobalt-strike-profiles-apache-mod_rewrite-htaccess-files-intelligent-c2-redirection/) - [Joe Vest (@joevest)](https://twitter.com/joevest)
 * [mod-rewrite-cheatsheet.com](http://mod-rewrite-cheatsheet.com)
