@@ -25,12 +25,14 @@ Using the Linux firewall tool *iptables*, we can NAT any incoming traffic on a c
 
 ```
 iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
-iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination <REMOTE-HOST-IP-ADDRESS>:80
+iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination <REMOTE-HOST-IP-ADDRESS>:443
 iptables -t nat -A POSTROUTING -j MASQUERADE
 iptables -I FORWARD -j ACCEPT
 iptables -P FORWARD ACCEPT
 sysctl net.ipv4.ip_forward=1
 ```
+
+>Update: Thank you to an eagle-eyed reader who called out that the commands above were incorrectly redirecting to port 80. These have been updated. Thank you, Gabriel!
 
 ### socat
 
