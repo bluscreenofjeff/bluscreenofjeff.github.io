@@ -15,7 +15,7 @@ description: bluescreenofjeff's blog
 <div class="container-fluid">
 <div class="row">
 	<div class="col-sm-12 col-md-8" style="padding:10px;">
-		<p>Blog for bluescreenofjeff</p>
+		<p>Blog for bluescreenofjeff. No longer active, but I'll leave this up in case it's useful to anyone :)</p>
 	</div>
 	 <div class="col-md-4">
 		<br><img src="/assets/bsoj.png" alt="bluescreenofjeff" class="img-thumbnail hidden-xs hidden-sm" />
